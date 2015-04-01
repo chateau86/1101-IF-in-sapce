@@ -8,6 +8,9 @@ When play begins: say  “You can’t believe you’ve finally made it. It seems
 
 The Rocket Interior is a room. The player is in the rocket. The description of Rocket interior is “The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket."
 
+Chest is an object. Chest is in Rocket Interior.
+
+Uniform is an object. Uniform is in the chest. Uniform is wearable.
+
 The Rocket Bathroom is a room. It is down of the Rocket interior.
 	[instead of going down from Rocket interior: say "You’ve already done everything you have to in there today."]
-		
