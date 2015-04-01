@@ -11,6 +11,7 @@ The Rocket Interior is a room. The player is in the rocket. The description of R
 Chest is an object. Chest is in Rocket Interior.
 
 Uniform is an object. Uniform is in the chest. Uniform is wearable.
+description of uniform is "A neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey."
 
 The Rocket Bathroom is a room. It is down of the Rocket interior.
 	[instead of going down from Rocket interior: say "You’ve already done everything you have to in there today."]
