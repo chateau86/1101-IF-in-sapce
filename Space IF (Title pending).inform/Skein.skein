@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x02912008" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x02911908"/>
+  <item nodeId="node-0x02912008">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet ____ has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to the new colony on ___ because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first.&#x000A;&#x000A;Space IF (Title pending)&#x000A;An Interactive Fiction by W.K.&#x000A;Release 1 / Serial number 150401 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Rocket Interior&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x029116D8"/>
+      <child nodeId="node-0x02911278"/>
+      <child nodeId="node-0x02911908"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029116D8">
+    <command xml:space="preserve">examine rocket</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02911BA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02911BA8">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">rocket&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02911278">
+    <command xml:space="preserve">w d</command>
+    <result xml:space="preserve">I only understood you as far as wanting to (go) w.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02911978"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02911978">
+    <command xml:space="preserve">w down</command>
+    <result xml:space="preserve">I only understood you as far as wanting to (go) w.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02911748"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02911748">
+    <command xml:space="preserve">walk down</command>
+    <result xml:space="preserve">Rocket Bathroom&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02911908">
+    <command xml:space="preserve">walk down</command>
+    <result xml:space="preserve">You've already done everything you have to in there today.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
