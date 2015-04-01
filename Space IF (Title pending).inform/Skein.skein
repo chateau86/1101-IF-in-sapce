@@ -1,154 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02B91980" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x02763C68" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02B91F30"/>
-  <item nodeId="node-0x02B91980">
+  <activeNode nodeId="node-0x029E0148"/>
+  <item nodeId="node-0x02763C68">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet ____ has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to the new colony on ___ because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first.&#x000A;&#x000A;Space IF (Title pending)&#x000A;An Interactive Fiction by W.K.&#x000A;Release 1 / Serial number 150401 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Rocket Interior&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket.&#x000A;&#x000A;You can see Chest (in which is Uniform) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet ____ has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to the new colony on ___ because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first.&#x000A;&#x000A;Space IF (Title pending)&#x000A;An Interactive Fiction by W.K.&#x000A;Release 1 / Serial number 150401 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Rocket Interior&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket.&#x000A;&#x000A;You can see Chest (closed) and Nightstand (on which are a lamp and a drawer (closed)) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
-      <child nodeId="node-0x02B91830"/>
-      <child nodeId="node-0x02B91670"/>
-      <child nodeId="node-0x02B914B0"/>
-      <child nodeId="node-0x02B916E0"/>
-      <child nodeId="node-0x02B91360"/>
+      <child nodeId="node-0x029DFEA8"/>
     </children>
   </item>
-  <item nodeId="node-0x02B91830">
-    <command xml:space="preserve">examine rocket</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x029DFEA8">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.&#x000A;&#x000A;You open the drawer, revealing candy wrapper and ID card.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
-      <child nodeId="node-0x02B92010"/>
+      <child nodeId="node-0x029E0148"/>
     </children>
   </item>
-  <item nodeId="node-0x02B92010">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">rocket&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into one side of the room with a small nightstand next to it. On the opposite side of the room is a small cubicle that leads to the bathroom. Taking up most of the space in the rocket is a chest in which you have been keeping all of your personal belongings. Across from this chest is the hatch that leads to outside of the rocket.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02B91670">
-    <command xml:space="preserve">w d</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) w.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B918A0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B918A0">
-    <command xml:space="preserve">w down</command>
-    <result xml:space="preserve">I only understood you as far as wanting to (go) w.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B91520"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B91520">
-    <command xml:space="preserve">walk down</command>
-    <result xml:space="preserve">Rocket Bathroom&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02B914B0">
-    <command xml:space="preserve">walk down</command>
-    <result xml:space="preserve">You've already done everything you have to in there today.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02B916E0">
-    <command xml:space="preserve">examine chest</command>
-    <result xml:space="preserve">In Chest is Uniform.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B91590"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B91590">
-    <command xml:space="preserve">take uniform</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B91B40"/>
-      <child nodeId="node-0x02B91F30"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B91B40">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  Uniform&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02B91F30">
-    <command xml:space="preserve">examine uniform</command>
-    <result xml:space="preserve">A neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02B91360">
-    <command xml:space="preserve">open chest</command>
-    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B912F0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B912F0">
-    <command xml:space="preserve">examine chest</command>
-    <result xml:space="preserve">In Chest is Uniform.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B919F0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B919F0">
-    <command xml:space="preserve">take uniform</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02B913D0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02B913D0">
-    <command xml:space="preserve">wear uniform</command>
-    <result xml:space="preserve">You put on Uniform.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-0x029E0148">
+    <command xml:space="preserve">look under wrapper</command>
+    <result xml:space="preserve">You've discovered ID card!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
