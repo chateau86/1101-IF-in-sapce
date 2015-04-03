@@ -1,13 +1,741 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x0283FBF8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x028A3F08" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x0283FBF8"/>
-  <item nodeId="node-0x0283FBF8">
+  <activeNode nodeId="node-0x0FFA0B50"/>
+  <item nodeId="node-0x028A3F08">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">Reference Computer implementation&#x000A;An Interactive Fiction by W.K.&#x000A;Release 1 / Serial number 150403 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;RoomA&#x000A;You can see HELP Computer here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02A24A78"/>
+      <child nodeId="node-0x02A32BE0"/>
+      <child nodeId="node-0x02A32C50"/>
+      <child nodeId="node-0x02A9A4E0"/>
+      <child nodeId="node-0x02A9AE80"/>
+      <child nodeId="node-0x0FFA08B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A24A78">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A24AE8"/>
+      <child nodeId="node-0x02A2E388"/>
+      <child nodeId="node-0x02A2E550"/>
+      <child nodeId="node-0x02A2E718"/>
+      <child nodeId="node-0x02A2E9A0"/>
+      <child nodeId="node-0x02A32A20"/>
+      <child nodeId="node-0x02A32B70"/>
+      <child nodeId="node-0x02A9A710"/>
+      <child nodeId="node-0x02A9AB00"/>
+      <child nodeId="node-0x02A9A8D0"/>
+      <child nodeId="node-0x02A9B190"/>
+      <child nodeId="node-0x02A9A9B0"/>
+      <child nodeId="node-0x02A9B0B0"/>
+      <child nodeId="node-0x02A9A940"/>
+      <child nodeId="node-0x02A9A400"/>
+      <child nodeId="node-0x02A9AE10"/>
+      <child nodeId="node-0x02A32EF0"/>
+      <child nodeId="node-0x0FFA0610"/>
+      <child nodeId="node-0x0FFA07D0"/>
+      <child nodeId="node-0x0FFA0CA0"/>
+      <child nodeId="node-0x0FFA0760"/>
+      <child nodeId="node-0x0FFA0B50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A24AE8">
+    <command xml:space="preserve">examine HELP computer</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E318"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E318">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">RoomA&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A2E388">
+    <command xml:space="preserve">lol</command>
+    <result xml:space="preserve">CMD: lol Param: &#x000A;wtf?&#x000A;That's not a verb I recognise.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E470"/>
+      <child nodeId="node-0x02A2E4E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E470">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A2E4E0">
+    <command xml:space="preserve">exit this</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A2E550">
+    <command xml:space="preserve">exit this</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E638"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E638">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E6A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E6A8">
+    <command xml:space="preserve">exit *</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A2E718">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E8C0"/>
+      <child nodeId="node-0x02A328D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E8C0">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A2E930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E930">
+    <command xml:space="preserve">exit this</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A328D0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A2E9A0">
+    <command xml:space="preserve">vi</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32F60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32F60">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">vi master race.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32A90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32A90">
+    <command xml:space="preserve">emacs this.txt</command>
+    <result xml:space="preserve">vi master race.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A329B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A329B0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32A20">
+    <command xml:space="preserve">echo</command>
+    <result xml:space="preserve">echo&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32B00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32B00">
+    <command xml:space="preserve">echo this</command>
+    <result xml:space="preserve">echo this&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32B70">
+    <command xml:space="preserve">echo this</command>
+    <result xml:space="preserve">AyyLmao this--echo&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32940"/>
+      <child nodeId="node-0x02A32E10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32940">
+    <command xml:space="preserve">echo</command>
+    <result xml:space="preserve">echo&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32E10">
+    <command xml:space="preserve">echo echo echo</command>
+    <result xml:space="preserve">echo&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A710">
+    <command xml:space="preserve">help</command>
+    <result xml:space="preserve">CMD: help Param: &#x000A;wtf?&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9AEF0"/>
+      <child nodeId="node-0x02A9B120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AEF0">
+    <command xml:space="preserve">fuck this</command>
+    <result xml:space="preserve">CMD: fuck Param:  this&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A6A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A6A0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9B120">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9AFD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AFD0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9AB00">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A8D0">
+    <command xml:space="preserve">this</command>
+    <result xml:space="preserve">CMD: this Param: \n&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9B190">
+    <command xml:space="preserve">cd test</command>
+    <result xml:space="preserve">CMD: cd Param:  test&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A860">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param:  ..&#x000A;&#x000A;guest@HELP:$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A9B0">
+    <command xml:space="preserve">inventory</command>
+    <result xml:space="preserve">CMD: inventory Param: &#x000A;wtf?&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A470">
+    <command xml:space="preserve">vi</command>
+    <result xml:space="preserve">CMD: vi Param: &#x000A;emacs master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9B040"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B040">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9B0B0">
+    <command xml:space="preserve">cd pr0nstash</command>
+    <result xml:space="preserve">CMD: cd Param:  pr0nstash&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A940">
+    <command xml:space="preserve">cd aaa</command>
+    <result xml:space="preserve">CMD: cd Param:  aaa&#x000A;/ aaa&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A400">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{"home", "guest", "PEN15"}cd done&#x000A;guest@HELP:/home, guest / PEN15$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A550"/>
+      <child nodeId="node-0x02A32DA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A550">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0n&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9AD30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AD30">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32DA0">
+    <command xml:space="preserve">cd pr)n</command>
+    <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;{503194, 503194}cd done&#x000A;guest@HELP:/503194 / 503194$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9AE10">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;cd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9B350"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B350">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0ncd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9B270"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B270">
+    <command xml:space="preserve">cd pr0n/lel</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n/lel&#x000A;/pr0n/lelcd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32EF0">
+    <command xml:space="preserve">cd pr)n</command>
+    <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;/pr)ncd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9AB70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AB70">
+    <command xml:space="preserve">cd pr)n</command>
+    <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;/pr)ncd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9B200"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B200">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0ncd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA0610">
+    <command xml:space="preserve">cd that</command>
+    <result xml:space="preserve">CMD: cd Param: that&#x000A;{"this", "PEN15"}cd done&#x000A;guest@HELP:/this / PEN15$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA07D0">
+    <command xml:space="preserve">cd pron</command>
+    <result xml:space="preserve">CMD: cd Param: pron&#x000A;{"home", "guest", "pron"}cd done&#x000A;guest@HELP:home/guest/pron/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0FB0">
+    <command xml:space="preserve">cd horsePron</command>
+    <result xml:space="preserve">CMD: cd Param: horsePron&#x000A;{"home", "guest", "pron", "horsePron"}cd done&#x000A;guest@HELP:home/guest/pron/horsePron/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA0CA0">
+    <command xml:space="preserve">cd horsePr0n</command>
+    <result xml:space="preserve">CMD: cd Param: horsePr0n&#x000A;cd done&#x000A;guest@HELP:/home/guest/horsePr0n/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0840">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;cd done&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA0760">
+    <command xml:space="preserve">cd .</command>
+    <result xml:space="preserve">CMD: cd Param: .&#x000A;{"home", "guest", "."}cd done&#x000A;guest@HELP:/home/guest/./$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA05A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA05A0">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;home and guestcd done&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0680"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0680">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;homecd done&#x000A;guest@HELP:/home/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA0B50">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">CMD: ls Param: &#x000A;At: /home/guest/&#x000A;Contain folder: horsePr0n and .local&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32BE0">
+    <command xml:space="preserve">examine help computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32E80"/>
+      <child nodeId="node-0x02A32860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32E80">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32860">
+    <command xml:space="preserve">lol</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A32C50">
+    <command xml:space="preserve">examione computer</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32CC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32CC0">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A32D30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32D30">
+    <command xml:space="preserve">echo this</command>
+    <result xml:space="preserve">echo this&#x000A;$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9A4E0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9AA20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AA20">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A630"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A630">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A9AE80">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A7F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A7F0">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9A5C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A5C0">
+    <command xml:space="preserve">emacs</command>
+    <result xml:space="preserve">vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9ABE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9ABE0">
+    <command xml:space="preserve">echo</command>
+    <result xml:space="preserve">echo&#x000A;guest@HELP:~$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0FFA08B0">
+    <command xml:space="preserve">xamine computer</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0DF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0DF0">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0D10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0D10">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{503194}cd done&#x000A;guest@HELP:/503194$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0FFA0990"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0990">
+    <command xml:space="preserve">cd pr0n</command>
+    <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{503194, 503194}cd done&#x000A;guest@HELP:/503194 and 503194$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
   </item>
 </Skein>
