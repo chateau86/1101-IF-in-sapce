@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <Skein rootNode="node-0x024B3CE8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
   <activeNode nodeId="node-0x02AF9898"/>
@@ -20,6 +21,28 @@
     </children>
   </item>
   <item nodeId="node-0x02AE5708">
+=======
+<Skein rootNode="node-0x028A3F08" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x0FFA0B50"/>
+  <item nodeId="node-0x028A3F08">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Reference Computer implementation&#x000A;An Interactive Fiction by W.K.&#x000A;Release 1 / Serial number 150403 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;RoomA&#x000A;You can see HELP Computer here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02A24A78"/>
+      <child nodeId="node-0x02A32BE0"/>
+      <child nodeId="node-0x02A32C50"/>
+      <child nodeId="node-0x02A9A4E0"/>
+      <child nodeId="node-0x02A9AE80"/>
+      <child nodeId="node-0x0FFA08B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A24A78">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -27,6 +50,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x024B3EC8"/>
       <child nodeId="node-0x02AEE330"/>
       <child nodeId="node-0x02AEED00"/>
@@ -53,6 +77,33 @@
     </children>
   </item>
   <item nodeId="node-0x024B3EC8">
+=======
+      <child nodeId="node-0x02A24AE8"/>
+      <child nodeId="node-0x02A2E388"/>
+      <child nodeId="node-0x02A2E550"/>
+      <child nodeId="node-0x02A2E718"/>
+      <child nodeId="node-0x02A2E9A0"/>
+      <child nodeId="node-0x02A32A20"/>
+      <child nodeId="node-0x02A32B70"/>
+      <child nodeId="node-0x02A9A710"/>
+      <child nodeId="node-0x02A9AB00"/>
+      <child nodeId="node-0x02A9A8D0"/>
+      <child nodeId="node-0x02A9B190"/>
+      <child nodeId="node-0x02A9A9B0"/>
+      <child nodeId="node-0x02A9B0B0"/>
+      <child nodeId="node-0x02A9A940"/>
+      <child nodeId="node-0x02A9A400"/>
+      <child nodeId="node-0x02A9AE10"/>
+      <child nodeId="node-0x02A32EF0"/>
+      <child nodeId="node-0x0FFA0610"/>
+      <child nodeId="node-0x0FFA07D0"/>
+      <child nodeId="node-0x0FFA0CA0"/>
+      <child nodeId="node-0x0FFA0760"/>
+      <child nodeId="node-0x0FFA0B50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A24AE8">
+>>>>>>> origin/master
     <command xml:space="preserve">examine HELP computer</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -60,10 +111,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x024B3F38"/>
     </children>
   </item>
   <item nodeId="node-0x024B3F38">
+=======
+      <child nodeId="node-0x02A2E318"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E318">
+>>>>>>> origin/master
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">RoomA&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -71,7 +129,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AEE330">
+=======
+  <item nodeId="node-0x02A2E388">
+>>>>>>> origin/master
     <command xml:space="preserve">lol</command>
     <result xml:space="preserve">CMD: lol Param: &#x000A;wtf?&#x000A;That's not a verb I recognise.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -79,11 +141,19 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AEE418"/>
       <child nodeId="node-0x02AEE488"/>
     </children>
   </item>
   <item nodeId="node-0x02AEE418">
+=======
+      <child nodeId="node-0x02A2E470"/>
+      <child nodeId="node-0x02A2E4E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E470">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -91,7 +161,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AEE488">
+=======
+  <item nodeId="node-0x02A2E4E0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit this</command>
     <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -99,7 +173,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AEED00">
+=======
+  <item nodeId="node-0x02A2E550">
+>>>>>>> origin/master
     <command xml:space="preserve">exit this</command>
     <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -107,10 +185,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AEEDE8"/>
     </children>
   </item>
   <item nodeId="node-0x02AEEDE8">
+=======
+      <child nodeId="node-0x02A2E638"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E638">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -118,10 +203,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AEEE58"/>
     </children>
   </item>
   <item nodeId="node-0x02AEEE58">
+=======
+      <child nodeId="node-0x02A2E6A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E6A8">
+>>>>>>> origin/master
     <command xml:space="preserve">exit *</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -129,7 +221,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AEEEC8">
+=======
+  <item nodeId="node-0x02A2E718">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -137,11 +233,19 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AEF070"/>
       <child nodeId="node-0x02AEF1C8"/>
     </children>
   </item>
   <item nodeId="node-0x02AEF070">
+=======
+      <child nodeId="node-0x02A2E8C0"/>
+      <child nodeId="node-0x02A328D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E8C0">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -149,10 +253,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AEF0E0"/>
     </children>
   </item>
   <item nodeId="node-0x02AEF0E0">
+=======
+      <child nodeId="node-0x02A2E930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A2E930">
+>>>>>>> origin/master
     <command xml:space="preserve">exit this</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -160,7 +271,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AEF1C8">
+=======
+  <item nodeId="node-0x02A328D0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -168,7 +283,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF50D8">
+=======
+  <item nodeId="node-0x02A2E9A0">
+>>>>>>> origin/master
     <command xml:space="preserve">vi</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -176,10 +295,17 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5068"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5068">
+=======
+      <child nodeId="node-0x02A32F60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32F60">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">vi master race.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -187,10 +313,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5148"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5148">
+=======
+      <child nodeId="node-0x02A32A90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32A90">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs this.txt</command>
     <result xml:space="preserve">vi master race.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -198,10 +331,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5768"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5768">
+=======
+      <child nodeId="node-0x02A329B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A329B0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -209,7 +349,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF5308">
+=======
+  <item nodeId="node-0x02A32A20">
+>>>>>>> origin/master
     <command xml:space="preserve">echo</command>
     <result xml:space="preserve">echo&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -217,10 +361,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5298"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5298">
+=======
+      <child nodeId="node-0x02A32B00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32B00">
+>>>>>>> origin/master
     <command xml:space="preserve">echo this</command>
     <result xml:space="preserve">echo this&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -228,7 +379,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF51B8">
+=======
+  <item nodeId="node-0x02A32B70">
+>>>>>>> origin/master
     <command xml:space="preserve">echo this</command>
     <result xml:space="preserve">AyyLmao this--echo&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -236,11 +391,19 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF56F8"/>
       <child nodeId="node-0x02AF5228"/>
     </children>
   </item>
   <item nodeId="node-0x02AF56F8">
+=======
+      <child nodeId="node-0x02A32940"/>
+      <child nodeId="node-0x02A32E10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32940">
+>>>>>>> origin/master
     <command xml:space="preserve">echo</command>
     <result xml:space="preserve">echo&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -248,7 +411,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF5228">
+=======
+  <item nodeId="node-0x02A32E10">
+>>>>>>> origin/master
     <command xml:space="preserve">echo echo echo</command>
     <result xml:space="preserve">echo&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -256,7 +423,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF5618">
+=======
+  <item nodeId="node-0x02A9A710">
+>>>>>>> origin/master
     <command xml:space="preserve">help</command>
     <result xml:space="preserve">CMD: help Param: &#x000A;wtf?&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -264,11 +435,19 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF57D8"/>
       <child nodeId="node-0x02AF5538"/>
     </children>
   </item>
   <item nodeId="node-0x02AF57D8">
+=======
+      <child nodeId="node-0x02A9AEF0"/>
+      <child nodeId="node-0x02A9B120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AEF0">
+>>>>>>> origin/master
     <command xml:space="preserve">fuck this</command>
     <result xml:space="preserve">CMD: fuck Param:  this&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -276,10 +455,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5378"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5378">
+=======
+      <child nodeId="node-0x02A9A6A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A6A0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -287,7 +473,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF5538">
+=======
+  <item nodeId="node-0x02A9B120">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -295,10 +485,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5458"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5458">
+=======
+      <child nodeId="node-0x02A9AFD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AFD0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -306,7 +503,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF53E8">
+=======
+  <item nodeId="node-0x02A9AB00">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -314,7 +515,11 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF54C8">
+=======
+  <item nodeId="node-0x02A9A8D0">
+>>>>>>> origin/master
     <command xml:space="preserve">this</command>
     <result xml:space="preserve">CMD: this Param: \n&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -322,7 +527,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF55A8">
+=======
+  <item nodeId="node-0x02A9B190">
+>>>>>>> origin/master
     <command xml:space="preserve">cd test</command>
     <result xml:space="preserve">CMD: cd Param:  test&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -330,10 +539,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF5688"/>
     </children>
   </item>
   <item nodeId="node-0x02AF5688">
+=======
+      <child nodeId="node-0x02A9A860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A860">
+>>>>>>> origin/master
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">CMD: cd Param:  ..&#x000A;&#x000A;guest@HELP:$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -341,7 +557,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6DA0">
+=======
+  <item nodeId="node-0x02A9A9B0">
+>>>>>>> origin/master
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">CMD: inventory Param: &#x000A;wtf?&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -349,10 +569,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF67F0"/>
     </children>
   </item>
   <item nodeId="node-0x02AF67F0">
+=======
+      <child nodeId="node-0x02A9A470"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A470">
+>>>>>>> origin/master
     <command xml:space="preserve">vi</command>
     <result xml:space="preserve">CMD: vi Param: &#x000A;emacs master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -360,10 +587,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6710"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6710">
+=======
+      <child nodeId="node-0x02A9B040"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B040">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">CMD: emacs Param: &#x000A;vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -371,7 +605,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6630">
+=======
+  <item nodeId="node-0x02A9B0B0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0nstash</command>
     <result xml:space="preserve">CMD: cd Param:  pr0nstash&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -379,7 +617,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6160">
+=======
+  <item nodeId="node-0x02A9A940">
+>>>>>>> origin/master
     <command xml:space="preserve">cd aaa</command>
     <result xml:space="preserve">CMD: cd Param:  aaa&#x000A;/ aaa&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -387,7 +629,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6470">
+=======
+  <item nodeId="node-0x02A9A400">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{"home", "guest", "PEN15"}cd done&#x000A;guest@HELP:/home, guest / PEN15$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -395,11 +641,19 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6780"/>
       <child nodeId="node-0x02AF6550"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6780">
+=======
+      <child nodeId="node-0x02A9A550"/>
+      <child nodeId="node-0x02A32DA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A550">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0n&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -407,10 +661,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6E10"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6E10">
+=======
+      <child nodeId="node-0x02A9AD30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AD30">
+>>>>>>> origin/master
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">CMD: cd Param: ..&#x000A;&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -418,7 +679,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6550">
+=======
+  <item nodeId="node-0x02A32DA0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr)n</command>
     <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;{503194, 503194}cd done&#x000A;guest@HELP:/503194 / 503194$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -426,6 +691,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6B70">
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">guest@HELP:/home/$&gt;</result>
@@ -439,6 +705,20 @@
     </children>
   </item>
   <item nodeId="node-0x02AF68D0">
+=======
+  <item nodeId="node-0x02A9AE10">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">CMD: cd Param: ..&#x000A;cd done&#x000A;guest@HELP:/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A9B350"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B350">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0ncd done&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -446,10 +726,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6080"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6080">
+=======
+      <child nodeId="node-0x02A9B270"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B270">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n/lel</command>
     <result xml:space="preserve">CMD: cd Param: pr0n/lel&#x000A;/pr0n/lelcd done&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -457,6 +744,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF9668">
     <command xml:space="preserve">ls</command>
     <result xml:space="preserve">At: /home/&#x000A;Contain folder: guest&#x000A;Contain file: &#x000A;&#x000A;guest@HELP:/home/$&gt;</result>
@@ -466,6 +754,9 @@
     <temporary score="0">YES</temporary>
   </item>
   <item nodeId="node-0x02AF6BE0">
+=======
+  <item nodeId="node-0x02A32EF0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr)n</command>
     <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;/pr)ncd done&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -473,10 +764,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF66A0"/>
     </children>
   </item>
   <item nodeId="node-0x02AF66A0">
+=======
+      <child nodeId="node-0x02A9AB70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AB70">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr)n</command>
     <result xml:space="preserve">CMD: cd Param: pr)n&#x000A;/pr)ncd done&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -484,10 +782,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6390"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6390">
+=======
+      <child nodeId="node-0x02A9B200"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9B200">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;/pr0ncd done&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -495,7 +800,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6860">
+=======
+  <item nodeId="node-0x0FFA0610">
+>>>>>>> origin/master
     <command xml:space="preserve">cd that</command>
     <result xml:space="preserve">CMD: cd Param: that&#x000A;{"this", "PEN15"}cd done&#x000A;guest@HELP:/this / PEN15$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -503,7 +812,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF69B0">
+=======
+  <item nodeId="node-0x0FFA07D0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pron</command>
     <result xml:space="preserve">CMD: cd Param: pron&#x000A;{"home", "guest", "pron"}cd done&#x000A;guest@HELP:home/guest/pron/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -511,10 +824,17 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6320"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6320">
+=======
+      <child nodeId="node-0x0FFA0FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0FB0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd horsePron</command>
     <result xml:space="preserve">CMD: cd Param: horsePron&#x000A;{"home", "guest", "pron", "horsePron"}cd done&#x000A;guest@HELP:home/guest/pron/horsePron/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -522,7 +842,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF61D0">
+=======
+  <item nodeId="node-0x0FFA0CA0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd horsePr0n</command>
     <result xml:space="preserve">CMD: cd Param: horsePr0n&#x000A;cd done&#x000A;guest@HELP:/home/guest/horsePr0n/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -530,10 +854,17 @@
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6A90"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6A90">
+=======
+      <child nodeId="node-0x0FFA0840"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0840">
+>>>>>>> origin/master
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">CMD: cd Param: ..&#x000A;cd done&#x000A;guest@HELP:/home/guest/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -541,7 +872,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6C50">
+=======
+  <item nodeId="node-0x0FFA0760">
+>>>>>>> origin/master
     <command xml:space="preserve">cd .</command>
     <result xml:space="preserve">CMD: cd Param: .&#x000A;{"home", "guest", "."}cd done&#x000A;guest@HELP:/home/guest/./$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -549,10 +884,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF60F0"/>
     </children>
   </item>
   <item nodeId="node-0x02AF60F0">
+=======
+      <child nodeId="node-0x0FFA05A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA05A0">
+>>>>>>> origin/master
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">CMD: cd Param: ..&#x000A;home and guestcd done&#x000A;guest@HELP:/home/guest/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -560,10 +902,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6240"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6240">
+=======
+      <child nodeId="node-0x0FFA0680"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0680">
+>>>>>>> origin/master
     <command xml:space="preserve">cd ..</command>
     <result xml:space="preserve">CMD: cd Param: ..&#x000A;homecd done&#x000A;guest@HELP:/home/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -571,6 +920,7 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6400">
     <command xml:space="preserve">ls</command>
     <result xml:space="preserve">CMD: ls Param: &#x000A;At: /home/guest/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
@@ -627,11 +977,17 @@
   <item nodeId="node-0x02AF9CF8">
     <command xml:space="preserve">ls</command>
     <result xml:space="preserve">CMD: ls Param: &#x000A;At: /home/guest/Download/&#x000A;Contain folder: &#x000A;Contain file: &#x000A;&#x000A;guest@HELP:/home/guest/Download/$&gt;</result>
+=======
+  <item nodeId="node-0x0FFA0B50">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">CMD: ls Param: &#x000A;At: /home/guest/&#x000A;Contain folder: horsePr0n and .local&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+>>>>>>> origin/master
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AFA078">
     <command xml:space="preserve">dir</command>
     <result xml:space="preserve">At: /home/guest/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
@@ -641,6 +997,9 @@
     <temporary score="0">YES</temporary>
   </item>
   <item nodeId="node-0x02AF6B00">
+=======
+  <item nodeId="node-0x02A32BE0">
+>>>>>>> origin/master
     <command xml:space="preserve">examine help computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -648,11 +1007,19 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF65C0"/>
       <child nodeId="node-0x02AF62B0"/>
     </children>
   </item>
   <item nodeId="node-0x02AF65C0">
+=======
+      <child nodeId="node-0x02A32E80"/>
+      <child nodeId="node-0x02A32860"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32E80">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -660,7 +1027,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF62B0">
+=======
+  <item nodeId="node-0x02A32860">
+>>>>>>> origin/master
     <command xml:space="preserve">lol</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -668,7 +1039,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6E80">
+=======
+  <item nodeId="node-0x02A32C50">
+>>>>>>> origin/master
     <command xml:space="preserve">examione computer</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -676,10 +1051,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6FD0"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6FD0">
+=======
+      <child nodeId="node-0x02A32CC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32CC0">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -687,10 +1069,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF6F60"/>
     </children>
   </item>
   <item nodeId="node-0x02AF6F60">
+=======
+      <child nodeId="node-0x02A32D30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A32D30">
+>>>>>>> origin/master
     <command xml:space="preserve">echo this</command>
     <result xml:space="preserve">echo this&#x000A;$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -698,7 +1087,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF6EF0">
+=======
+  <item nodeId="node-0x02A9A4E0">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -706,10 +1099,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9978"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9978">
+=======
+      <child nodeId="node-0x02A9AA20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9AA20">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -717,10 +1117,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9C88"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9C88">
+=======
+      <child nodeId="node-0x02A9A630"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A630">
+>>>>>>> origin/master
     <command xml:space="preserve">exit</command>
     <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -728,7 +1135,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF9E48">
+=======
+  <item nodeId="node-0x02A9AE80">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -736,10 +1147,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9DD8"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9DD8">
+=======
+      <child nodeId="node-0x02A9A7F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A7F0">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -747,10 +1165,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF96D8"/>
     </children>
   </item>
   <item nodeId="node-0x02AF96D8">
+=======
+      <child nodeId="node-0x02A9A5C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9A5C0">
+>>>>>>> origin/master
     <command xml:space="preserve">emacs</command>
     <result xml:space="preserve">vi master race.&#x000A;&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -758,10 +1183,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9C18"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9C18">
+=======
+      <child nodeId="node-0x02A9ABE0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A9ABE0">
+>>>>>>> origin/master
     <command xml:space="preserve">echo</command>
     <result xml:space="preserve">echo&#x000A;guest@HELP:~$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -769,7 +1201,11 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
+<<<<<<< HEAD
   <item nodeId="node-0x02AF9AC8">
+=======
+  <item nodeId="node-0x0FFA08B0">
+>>>>>>> origin/master
     <command xml:space="preserve">xamine computer</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -777,10 +1213,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9BA8"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9BA8">
+=======
+      <child nodeId="node-0x0FFA0DF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0DF0">
+>>>>>>> origin/master
     <command xml:space="preserve">examine computer</command>
     <result xml:space="preserve">Welcome to the Handbook for Exemplary Learning Practices. In order to logon to this terminal, you'll need to enter the correct password.&#x000A;&#x000A;guest@HELP:/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -788,10 +1231,17 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF97B8"/>
     </children>
   </item>
   <item nodeId="node-0x02AF97B8">
+=======
+      <child nodeId="node-0x0FFA0D10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0D10">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{503194}cd done&#x000A;guest@HELP:/503194$&gt;</result>
     <commentary xml:space="preserve"></commentary>
@@ -799,16 +1249,24 @@
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
+<<<<<<< HEAD
       <child nodeId="node-0x02AF9B38"/>
     </children>
   </item>
   <item nodeId="node-0x02AF9B38">
+=======
+      <child nodeId="node-0x0FFA0990"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0FFA0990">
+>>>>>>> origin/master
     <command xml:space="preserve">cd pr0n</command>
     <result xml:space="preserve">CMD: cd Param: pr0n&#x000A;{503194, 503194}cd done&#x000A;guest@HELP:/503194 and 503194$&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">YES</temporary>
+<<<<<<< HEAD
   </item>
   <item nodeId="node-0x02AF9898">
     <command xml:space="preserve">look</command>
@@ -817,5 +1275,7 @@
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
+=======
+>>>>>>> origin/master
   </item>
 </Skein>
