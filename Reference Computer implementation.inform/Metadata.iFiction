@@ -7,11 +7,7 @@
         </identification>
         <bibliographic>
             <title>Reference Computer implementation</title>
-<<<<<<< HEAD
             <author>Woradorn K.</author>
-=======
-            <author>W.K.</author>
->>>>>>> origin/master
             <headline>An Interactive Fiction</headline>
             <genre>Fiction</genre>
             <firstpublished>2015</firstpublished>
