@@ -1,13 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x026EA380" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x00763CD8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x026EA380"/>
-  <item nodeId="node-0x026EA380">
+  <activeNode nodeId="node-0x028F9340"/>
+  <item nodeId="node-0x00763CD8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">Please examine the computer.&#x000A;&#x000A;Reference Computer implementation&#x000A;An Interactive Fiction by Woradorn K.&#x000A;Release 1 / Serial number 150406 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;RoomA&#x000A;Go play with the computer already!&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x028F9490"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F9490">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">You see nothing special about HELP Computer.&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F9570"/>
+      <child nodeId="node-0x028F9420"/>
+      <child nodeId="node-0x028F9260"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F9570">
+    <command xml:space="preserve">dir</command>
+    <result xml:space="preserve">At: /home/guest/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F9810"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F9810">
+    <command xml:space="preserve">cat diary.txt</command>
+    <result xml:space="preserve">/home/guest/diary.txtfile found&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F9730"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F9730">
+    <command xml:space="preserve">cat horsepr0n.exe</command>
+    <result xml:space="preserve">/home/guest/horsepr0n.exefile not found&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x028F9420">
+    <command xml:space="preserve">cat diary.txt</command>
+    <result xml:space="preserve">-----&#x000A;This is my diary. Shame on you for reading it.&#x000A;-----&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F97A0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F97A0">
+    <command xml:space="preserve">cd Documents</command>
+    <result xml:space="preserve">guest@HELP:/home/guest/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F9340"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F9340">
+    <command xml:space="preserve">cat deathRateStat.csv</command>
+    <result xml:space="preserve">-----&#x000A;Date, Death.&#x000A;B4 OrangeDay, 5&#x000A;OrangeDay, 0&#x000A;AfterOrangeDay, 28&#x000A;-----&#x000A;guest@HELP:/home/guest/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x028F9260">
+    <command xml:space="preserve">cd Documents</command>
+    <result xml:space="preserve">guest@HELP:/home/guest/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F98F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F98F0">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/guest/Documents/&#x000A;Contain folder: &#x000A;Contain file: deathRateStat.csv&#x000A;&#x000A;guest@HELP:/home/guest/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x028F91F0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x028F91F0">
+    <command xml:space="preserve">cat deathRateStat.csv</command>
+    <result xml:space="preserve">-----&#x000A;This is my diary. Shame on you for reading it., Date, Death.&#x000A;B4 OrangeDay, 5&#x000A;OrangeDay, 0&#x000A;AfterOrangeDay, 28&#x000A;-----&#x000A;guest@HELP:/home/guest/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
   </item>
 </Skein>

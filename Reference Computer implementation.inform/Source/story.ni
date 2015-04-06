@@ -67,6 +67,13 @@ After reading a command when the command prompt matches the regular expression "
 		choose row with dir of currDirTxt in the table of fileindir;
 		say "Contain folder: [memberFolder entry][line break]";
 		say "Contain file: [memberFile entry][line break]";
+	else if (strCmd matches the text "cat"):
+		let fileName be "[currDirTxt][strPAram]";
+		[say "[filename]";]
+		if filename is a url listed in Table of fileContent:
+			say "-----[line break][fileContent corresponding to url of filename in table of FileContent][line break]-----";
+		else:
+			say "file not found";
 	else:
 		say "wtf?";
 	reject the player's command.
@@ -83,5 +90,6 @@ dir			memberFolder		memberFile
 "/home/guest/Documents/"			{}		{"deathRateStat.csv"}
 
 Table of fileContent
-url							fileContent
-"/home/guest/diary.txt"							"This is my diary. Shame on you for reading it."
+url		fileContent
+"/home/guest/diary.txt"		"This is my diary. Shame on you for reading it."
+"/home/guest/Documents/deathRateStat.csv"		"Date,	Death.[line break]B4 OrangeDay,	5[line break]OrangeDay,	0[line break]AfterOrangeDay,	28"
