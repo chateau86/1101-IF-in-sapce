@@ -75,7 +75,7 @@ After reading a command when the command prompt matches the regular expression "
 		else:
 			say "file not found";
 	else:
-		say "wtf?";
+		say "Command not recognized";
 	reject the player's command.
 	
 chapter 2- Data
