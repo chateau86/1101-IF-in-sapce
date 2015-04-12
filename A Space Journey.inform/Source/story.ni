@@ -2,6 +2,7 @@ The story genre is "Science Fiction". The story headline is "A Space Journey". T
 
 Chapter 0 - Meta declaration
 
+[From 'Meaningful instruction']
 Underlying relates various things to one thing. The verb to underlie means the underlying relation. The verb to be under means the underlying relation. The verb to be beneath means the underlying relation.
 	Instead of looking under a thing which is underlaid by something (called the lost object):
 	Say "You've discovered [the list of things which underlie the noun]!";
@@ -26,7 +27,7 @@ say "[italic type]It is the year 2315, you are an astronaut who embarks on a jou
 The Mid Deck is a room. "The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.” East of the Mid Deck is Your Room. West of the Mid Deck is the Bathroom. Up from the Mid Deck is the Flight Deck. Down from the Mid Deck is the Lower Deck.
 	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing."
-	Computer is an object. computer is in mid deck. [for testing]
+	[Computer is an object. computer is in mid deck. ][for testing]
 
 
 
@@ -78,31 +79,38 @@ instead of entering spaceplane:
 	else:
 		say “As you slide myself into the pilot seat, you second guess my own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over”.
 
-The Main Town is a room. Main town is north of parking lot.
+The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
+
+The Town Hall is a room. Town hall is north of Town square.
+Desk is an object. Desk is in town hall. Desk is fixed in place. Computer is an object. Computer is on desk. Computer is fixed in place.
+
+[-----RESIDENTAL-----]
+The Residential area is west of Town square.
 
 
-The Town Hall is a room. Desk is an object. Desk is fixed in place. Computer is an object. Computer is fixed in place.
+Red house is a room. Red house is northeast of Residental area.
 
+Green house is a room. Green house is southeast of Residental area.
 
-The Hospital is a room.
+The Johnson's Hall is a room. Johnson's hall is east of Residental area. [describe as blue house]
 
+The Johnson's Office is a room. it is west of Johnson's hall.
 
-The Johnson's Office is a room.
+The Johnson's Dining Area is a room. it is north of Johnson's office.
 
+The Johnson's Daughter's Bedroom is a room. it is east of Johnson's hall.
 
-The Johnson's Hall is a room.
+The Johnson's Parent's Bedroom is a room. it is northeast of Johnson's hall.
 
+[-----HOSPITAL-----]
 
-The Johnson's Dining Area is a room.
+The Hospital lobby is a room.  Hospital lobby is west of town hall.
 
+The Patient room is a room. it is north of hospital lobby.
 
-The Johnson's Daughter's Bedroom is a room.
+The Hospital hallway is up of Hospital lobby.
 
-
-The Johnson's Study is a room.
-
-
-The Johnson's Basement is a room.
+The Doctor's office is north of Hospital hallway.
  
 Chapter 2 - Meta - Computer
 
@@ -190,6 +198,8 @@ After reading a command when the command prompt matches the regular expression "
 		let fileName be "[currDirTxt][strPAram]";
 		[say "[filename]";]
 		if filename is a url listed in Table of fileContent:
+			choose row with url of filename in table of FileContent;
+			change isRead entry to 1;
 			say "-----[line break][fileContent corresponding to url of filename in table of FileContent][line break]-----";
 		else:
 			say "file not found";
@@ -212,7 +222,13 @@ dir			memberFolder		memberFile
 
 
 Table of fileContent
-url		fileContent
-"/home/john12/Download/B979Manual/FCOM.txt"		"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
-"/home/john12/Download/B979Manual/MxManual.txt"		"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."
-"/home/john12/Documents/BlogDraft.txt"		"... Just look at the death rate here. On the date ##, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ..."
+url	isRead (a number)	fileContent
+"/home/john12/Download/B979Manual/FCOM.txt"	0	"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
+"/home/john12/Download/B979Manual/MxManual.txt"	0	"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."			
+"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date ##, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ..."	
+
+Chapter - 3 - Player status
+
+knowOrangeDay is a truth state that varies. knowOrangeDay is false.
+knowDeathRate is a truth state that varies. KnowDeathRate is false.
+
