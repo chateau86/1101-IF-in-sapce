@@ -64,8 +64,19 @@ The Bathroom is a room. “You’ve already done everything you have to in here 
 
 The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
 	Spaceplane is a vehicle. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
-	instead of entering spaceplane:
-		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...".[TODO: Proper logic]
+	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
+	Spaceplane can be unFumigatedTOConfirm. spaceplane is not unFumigatedTOConfirm.
+instead of entering spaceplane:
+	if (spaceplane is doorBroken):
+		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...";[TODO: Proper logic]
+	[else if ([TODO: all clue solved]):
+		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";]
+	else if (spaceplane is fumigated):
+		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
+	else if (spaceplane is unFumigatedTOConfirm):
+		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
+	else:
+		say “As you slide myself into the pilot seat, you second guess my own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over”.
 
 The Main Town is a room. Main town is north of parking lot.
 
