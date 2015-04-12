@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x029A4CF0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02A014A0"/>
+  <activeNode nodeId="node-0x02A013C0"/>
   <item nodeId="node-0x029A4CF0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">It is the year 2315, you are an astronaut who embarks on a journey a new planet, due to overpopulation and climate change destroying valuable resources on Earth. The planet is located in a different galaxy and accessible only through a wormhole. The planet, Xuria, has been found to be teeming with exotic plant life, quite habitable compared to Earth.&#x000A;&#x000A;&#x000A;---------------------------------------------------------------------------------------------------------------&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet Xuria has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to join the experimental colony on Xuria because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first. There might be fire or sharp fragments of the ship outside after that rough landing.&#x000A;&#x000A;Welcome&#x000A;A Space Journey&#x000A;Release 1 / Serial number 150412 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Mid Deck&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure and Computer here.&#x000A;&#x000A;&gt;</result>
@@ -65,6 +65,7 @@
     <children>
       <child nodeId="node-0x029A5140"/>
       <child nodeId="node-0x029AE778"/>
+      <child nodeId="node-0x02A00A20"/>
     </children>
   </item>
   <item nodeId="node-0x029A5140">
@@ -131,6 +132,190 @@
   <item nodeId="node-0x029AE318">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure and Computer here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A00A20">
+    <command xml:space="preserve">john12</command>
+    <result xml:space="preserve">-john12-&#x000A;&#x000A;Password :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A01510"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A01510">
+    <command xml:space="preserve">CoHoBaSt</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A017B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A017B0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Command not recognized&#x000A;john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00B70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00B70">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: &#x000A;&#x000A;john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00D30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00D30">
+    <command xml:space="preserve">cd Download</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Download/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A01120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A01120">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/Download/&#x000A;Contain folder: B979Manual&#x000A;Contain file: &#x000A;&#x000A;john12@TownHall-02:/home/john12/Download/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00EF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00EF0">
+    <command xml:space="preserve">cd B979Manual</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00A90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00A90">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/Download/B979Manual/&#x000A;Contain folder: &#x000A;Contain file: FCOM.txt and MxManual.txt&#x000A;&#x000A;john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00FD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00FD0">
+    <command xml:space="preserve">cat FCOM.txt</command>
+    <result xml:space="preserve">-----&#x000A;A very long text that sounds more and more familar as it brings back your memories from your freight dog days...&#x000A;-----&#x000A;john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00DA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00DA0">
+    <command xml:space="preserve">cat MxManual.txt</command>
+    <result xml:space="preserve">-----&#x000A;Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise. Horseradish is not allowed, either.&#x000A;-----&#x000A;john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A01200"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A01200">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Download/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00CC0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00CC0">
+    <command xml:space="preserve">cd ..</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A00B00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A00B00">
+    <command xml:space="preserve">cd Documents</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A010B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A010B0">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/Documents/&#x000A;Contain folder: &#x000A;Contain file: BlogDraft.txt&#x000A;&#x000A;john12@TownHall-02:/home/john12/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A012E0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A012E0">
+    <command xml:space="preserve">cat BLogDraft.txt</command>
+    <result xml:space="preserve">file not found&#x000A;john12@TownHall-02:/home/john12/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A01430"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A01430">
+    <command xml:space="preserve">cat BlogDraft.txt</command>
+    <result xml:space="preserve">-----&#x000A;... Just look at the death rate here. On the date ##, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ...&#x000A;-----&#x000A;john12@TownHall-02:/home/john12/Documents/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A013C0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A013C0">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

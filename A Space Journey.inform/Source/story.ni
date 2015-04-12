@@ -100,8 +100,8 @@ currDirTxt is a text variable.
 currDir is a list of text variable.
 
 
-currUsr is "guest".
-currMch is "HELP".
+currUsr is "".
+currMch is "TownHall-02".
 currDir is usually {"home", "[currUsr]"}.
 currDirTxt is usually "/home/[currUsr]".
 
@@ -112,8 +112,7 @@ After examining the Computer:
 
 After reading a command when the command prompt matches the text "Enter username :":
 	now currUsr is player's command;
-	say "-[currUsr]-[line break]";
-	if currUsr matches the text "guest":
+	if currUsr matches the text "john12":
 		now the command prompt is "Password :";
 		reject the player's command;
 	else:
@@ -190,12 +189,14 @@ dir			memberFolder		memberFile
 "/"			{"home", "mnt"}		{}
 "/mnt/"			{}		{}
 "/home/"			{"guest"}		{}
-"/home/guest/"			{"Download","Documents"}		{"diary.txt"}
-"/home/guest/Download/"			{}		{}
-"/home/guest/Documents/"			{}		{"deathRateStat.csv"}
+"/home/john12/"			{"Download","Documents"}		{}
+"/home/john12/Download/"			{"B979Manual"}		{}
+"/home/john12/Download/B979Manual/"			{}		{"FCOM.txt","MxManual.txt"}
+"/home/john12/Documents/"			{}		{"BlogDraft.txt"}
 
 
 Table of fileContent
 url		fileContent
-"/home/guest/diary.txt"		"This is my diary. Shame on you for reading it."
-"/home/guest/Documents/deathRateStat.csv"		"Date,	Death.[line break]B4 OrangeDay,	5[line break]OrangeDay,	0[line break]AfterOrangeDay,	28"
+"/home/john12/Download/B979Manual/FCOM.txt"		"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
+"/home/john12/Download/B979Manual/MxManual.txt"		"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."
+"/home/john12/Documents/BlogDraft.txt"		"... Just look at the death rate here. On the date ##, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ..."
