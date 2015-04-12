@@ -1,5 +1,12 @@
 The story genre is "Science Fiction". The story headline is "A Space Journey". The story creation year is 2015. 
 
+Chapter 0 - Meta declaration
+
+Underlying relates various things to one thing. The verb to underlie means the underlying relation. The verb to be under means the underlying relation. The verb to be beneath means the underlying relation.
+	Instead of looking under a thing which is underlaid by something (called the lost object):
+	Say "You've discovered [the list of things which underlie the noun]!";
+		now every thing which underlies the noun is carried by the player;
+		now every thing which underlies the noun does not underlie the noun.
 
 Chapter 1 - Story
 
@@ -22,15 +29,35 @@ All that performance was paid for with reduced structure, something you just dis
 	Computer is an object. computer is in mid deck. [for testing]
 
 
+
 The Lower Deck is a room. "There is a hatch on the side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
 
 
-The Flight Deck is a room. [For now] "Why would you need to do anything here? You just go onto this planet." The Flight Deck is up from the Mid Deck.
-	instead of going up from mid deck: say "Why would you need to do anything here? You just go onto this planet.".
+The Flight Deck is a room. The Flight Deck is up from the Mid Deck.
+	instead of going up from mid deck: say "Through the jammed door, you saw a large pool of blood and guts on the floor. You see no point in opening the cockpit door and seeing the gore in full detail.".
 
 
 The Your Room is a room. "The majority of space in the room is taken up by the chest that you kept all your belongings in. Next to your makeshift 'bed' is a small nightstand." Your Room is east of the Mid Deck.
+	Chest is in your room. Chest is an object. Chest is fixed in place. Chest is closed. Chest is openable. 
+	Carry out opening chest: say "Inside the chest you see a neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey."
 
+		Uniform is an object. Uniform is in the chest. Uniform is wearable.
+		description of uniform is "A neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey.".
+		Carry out wearing:
+			say "You pull on the comfortable outfit and get ready to leave your rocket for good."
+			
+	Nightstand is in your room. Nightstand is object. Nightstand is fixed in place.
+	Description of nightstand is “The nightstand is a small table with a single drawer. It has a small lamp which is providing light for the tiny room.”
+	
+		The nightstand support a lamp. the lamp is fixed in place. 
+		Description of lamp is "$1million in R&D gave us this $5.99 IKEA lamp. Everything is more expensive in Aerospace, they said."
+	
+		The nightstand support a drawer. the drawer is closed. the drawer is openable. drawer is fixed in place.
+		Carry out opening drawer: say “You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.”
+	
+		candy wrapper is in drawer.
+		
+		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the rocket door.
 
 The Bathroom is a room. “You’ve already done everything you have to in here today.” The Bathroom is west of the Mid Deck.
 
@@ -61,8 +88,6 @@ The Johnson's Study is a room.
 
 The Johnson's Basement is a room.
  
-
-
 Chapter 2 - Meta - Computer
 
 
