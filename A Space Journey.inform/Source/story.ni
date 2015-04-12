@@ -32,6 +32,7 @@ All that performance was paid for with reduced structure, something you just dis
 
 The Lower Deck is a room. "There is a hatch on the side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
 
+Ship door is a door.  ship door is closed. ship door is locked. ship door is north of lower deck and south of parking lot.
 
 The Flight Deck is a room. The Flight Deck is up from the Mid Deck.
 	instead of going up from mid deck: say "Through the jammed door, you saw a large pool of blood and guts on the floor. You see no point in opening the cockpit door and seeing the gore in full detail.".
@@ -57,12 +58,16 @@ The Your Room is a room. "The majority of space in the room is taken up by the c
 	
 		candy wrapper is in drawer.
 		
-		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the rocket door.
+		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the ship door.
 
 The Bathroom is a room. “You’ve already done everything you have to in here today.” The Bathroom is west of the Mid Deck.
 
+The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
+	Spaceplane is a vehicle. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
+	instead of entering spaceplane:
+		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...".[TODO: Proper logic]
 
-The Main Town is a room.
+The Main Town is a room. Main town is north of parking lot.
 
 
 The Town Hall is a room. Desk is an object. Desk is fixed in place. Computer is an object. Computer is fixed in place.
