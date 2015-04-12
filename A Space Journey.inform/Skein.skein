@@ -1,13 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Skein rootNode="node-0x02A54340" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x029F79D8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x02A54340"/>
-  <item nodeId="node-0x02A54340">
+  <activeNode nodeId="node-0x02AA80D8"/>
+  <item nodeId="node-0x029F79D8">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve"></result>
+    <result xml:space="preserve">It is the year 2315, you are an astronaut who embarks on a journey a new planet, due to overpopulation and climate change destroying valuable resources on Earth. The planet is located in a different galaxy and accessible only through a wormhole. The planet, Xuria, has been found to be teeming with exotic plant life, quite habitable compared to Earth.&#x000A;&#x000A;&#x000A;---------------------------------------------------------------------------------------------------------------&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet Xuria has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to join the experimental colony on Xuria because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first. There might be fire or sharp fragments of the ship outside after that rough landing.&#x000A;&#x000A;Welcome&#x000A;A Space Journey&#x000A;Release 1 / Serial number 150412 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Mid Deck&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure and Computer here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <played>NO</played>
+    <played>YES</played>
     <changed>NO</changed>
     <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x029F7578"/>
+      <child nodeId="node-0x029F7AB8"/>
+      <child nodeId="node-0x029F7B28"/>
+      <child nodeId="node-0x029F76C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F7578">
+    <command xml:space="preserve">walk up</command>
+    <result xml:space="preserve">Why would you need to do anything here? You just go onto this planet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x029F7AB8">
+    <command xml:space="preserve">examine brochure</command>
+    <result xml:space="preserve">"The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel." All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F7888"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F7888">
+    <command xml:space="preserve">examine brochure</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F78F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F78F8">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x029F7B28">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">You see nothing special about Computer.&#x000A;&#x000A;Enter username :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F7A48"/>
+      <child nodeId="node-0x029F7658"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F7A48">
+    <command xml:space="preserve">penis</command>
+    <result xml:space="preserve">Bad passwordThat's not a verb I recognise.</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x029F7658">
+    <command xml:space="preserve">guest</command>
+    <result xml:space="preserve">-guest-&#x000A;&#x000A;Password :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F7968"/>
+      <child nodeId="node-0x02AA76C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F7968">
+    <command xml:space="preserve">lol</command>
+    <result xml:space="preserve">Bad password&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02AA76C8">
+    <command xml:space="preserve">CoHoBaSt</command>
+    <result xml:space="preserve">guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA7888"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA7888">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/guest/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: diary.txt&#x000A;&#x000A;guest@HELP:/home/guest/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA7FF8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA7FF8">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA80D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA80D8">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure and Computer here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x029F76C8">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F7818"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F7818">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">You see nothing special about Computer.&#x000A;&#x000A;Enter username :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x029F75E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x029F75E8">
+    <command xml:space="preserve">guest</command>
+    <result xml:space="preserve">Bad UsernameThat's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
   </item>
 </Skein>
