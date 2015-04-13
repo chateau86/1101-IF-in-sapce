@@ -119,7 +119,7 @@ instead of going east from Johnson's hall:
 
 [-----HOSPITAL-----]
 
-The Hospital lobby is a room.  Hospital lobby is west of town hall. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. To the east you see a set of stairs leading up to a second floor. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”
+The Hospital lobby is a room.  Hospital lobby is west of town square. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. To the east you see a set of stairs leading up to a second floor. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”
 
 The Patient room is a room. it is north of hospital lobby. Description of Patient room is “You enter one of the patient rooms and see that it is full of various metal cylinders. You look at them more closely and see that they are labeled Carbon Dioxide, Tetrachloroethane, and and Hexachlorocyclohexane."
 
