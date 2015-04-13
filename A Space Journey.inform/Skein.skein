@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x03054AC8" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x030FF1C0"/>
+  <activeNode nodeId="node-0x030FEBA0"/>
   <item nodeId="node-0x03054AC8">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">It is the year 2315, you are an astronaut who embarks on a journey a new planet, due to overpopulation and climate change destroying valuable resources on Earth. The planet is located in a different galaxy and accessible only through a wormhole. The planet, Xuria, has been found to be teeming with exotic plant life, quite habitable compared to Earth.&#x000A;&#x000A;&#x000A;---------------------------------------------------------------------------------------------------------------&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet Xuria has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to join the experimental colony on Xuria because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first. There might be fire or sharp fragments of the ship outside after that rough landing.&#x000A;&#x000A;Welcome&#x000A;A Space Journey&#x000A;Release 1 / Serial number 150412 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Mid Deck&#x000A;The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure here.&#x000A;&#x000A;&gt;</result>
@@ -363,10 +363,10 @@
   </item>
   <item nodeId="node-0x030FE510">
     <command xml:space="preserve">walk e</command>
-    <result xml:space="preserve">Johnson's Hall&#x000A;Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven't seen a single person yet. You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, " H-hello?" but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms to the east, a study to the west, and the exist is to the south.&#x000A;&#x000A;You can see Bedroom door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Johnson's Hall&#x000A;Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven't seen a single person yet. You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, " H-hello?" but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms to the east, a study to the west, and the exit is to the south.&#x000A;&#x000A;You can see Bedroom door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x030FEE40"/>
@@ -385,10 +385,10 @@
   </item>
   <item nodeId="node-0x030FEB30">
     <command xml:space="preserve">walk e</command>
-    <result xml:space="preserve">Johnson's Parent's Bedroom&#x000A;You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x030FF230"/>
@@ -396,10 +396,10 @@
   </item>
   <item nodeId="node-0x030FF230">
     <command xml:space="preserve">walk e</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You refuse to enter that horrid room again.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x030FE740"/>
@@ -418,10 +418,10 @@
   </item>
   <item nodeId="node-0x030FE820">
     <command xml:space="preserve">walk w</command>
-    <result xml:space="preserve">Johnson's Hall&#x000A;Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven't seen a single person yet. You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, " H-hello?" but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms to the east, a study to the west, and the exist is to the south.&#x000A;&#x000A;You can see Bedroom door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Johnson's Office&#x000A;You enter a room with a large desk that is much neater than the one in the doctor's office. On the desk you can see more pictures as well as a key attached to a lanyard.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x030FF1C0"/>
@@ -429,7 +429,18 @@
   </item>
   <item nodeId="node-0x030FF1C0">
     <command xml:space="preserve">walk e</command>
-    <result xml:space="preserve">Johnson's Parent's Bedroom&#x000A;You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Johnson's Hall&#x000A;Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven't seen a single person yet. You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, " H-hello?" but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms to the east, a study to the west, and the exit is to the south.&#x000A;&#x000A;You can see Bedroom door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x030FEBA0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x030FEBA0">
+    <command xml:space="preserve">walk e</command>
+    <result xml:space="preserve">You refuse to enter that horrid room again.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
