@@ -24,14 +24,14 @@ say "[italic type]It is the year 2315, you are an astronaut who embarks on a jou
 [bold type]You can’t believe you’ve finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet Xuria has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to join the experimental colony on Xuria because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first. There might be fire or sharp fragments of the ship outside after that rough landing.”
 
 
-The Mid Deck is a room. "The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.” East of the Mid Deck is Your Room. West of the Mid Deck is the Bathroom. Up from the Mid Deck is the Flight Deck. Down from the Mid Deck is the Lower Deck.
-	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
+The Mid Deck is a room. "The interior of the rocketship is almost entirely white. There is a cramped cot built into the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.” East of the Mid Deck is Your Room. West of the Mid Deck is the Bathroom. Up from the Mid Deck is the Flight Deck. Down from the Mid Deck is the Lower Deck.
+	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing."
 	[Computer is an object. computer is in mid deck. ][for testing]
 
 
 
-The Lower Deck is a room. "There is a hatch on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
+The Lower Deck is a room. "There is a hatch on the side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
 
 Ship door is a door.  ship door is closed. ship door is locked. ship door is north of lower deck and south of parking lot.
 
@@ -61,13 +61,12 @@ The Your Room is a room. "The majority of space in the room is taken up by the c
 		
 		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the ship door.
 
-The Bathroom is a room. The Bathroom is west of the Mid Deck.
-instead of going west from mid deck:
-	say "You’ve already done everything you have to in here today.”.
-	
+The Bathroom is a room. “You’ve already done everything you have to in here today.” The Bathroom is west of the Mid Deck.
+
 The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
 	Spaceplane is a vehicle. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
+	Spaceplane can be unFumigatedTOConfirm. spaceplane is not unFumigatedTOConfirm.
 instead of entering spaceplane:
 	if (spaceplane is doorBroken):
 		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...";[TODO: Proper logic]
@@ -75,48 +74,34 @@ instead of entering spaceplane:
 		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";]
 	else if (spaceplane is fumigated):
 		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
-	else if unFumigatedTOConfirm is true:
+	else if (spaceplane is unFumigatedTOConfirm):
 		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
 	else:
-		say “As you slide myself into the pilot seat, you second guess my own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should I do it...”.
+		say “As you slide myself into the pilot seat, you second guess my own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over”.
 
 The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
 
-The Town Hall is a room. Town hall is north of Town square. Description of Town Hall is “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.”
-ComputerDesk is an object. ComputerDesk is in town hall. ComputerDesk is fixed in place. Computer is an object. Computer is on computer desk. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: Hide proper docs somewhere]
+The Town Hall is a room. Town hall is north of Town square.
+Table is an object. Table is in town hall. Table is fixed in place. Computer is an object. Computer is on town hall desk. Computer is fixed in place.
 
 [-----RESIDENTAL-----]
-The Residential area is east of Town square. Description of Residential area is “You walk towards the residential area hoping that you’ll finally find someone else. Its kind of creepy that no one has come to greet you yet. As you approach the residential area you see a line of houses that are all the same except for the color. The houses closest to you are green, blue, and red. To the east is the town square.”
+The Residential area is west of Town square.
 
 
-Red house is a room. Red house is northeast of Residential area. Description of Red house is  “You approach the front door of the house and try to open the door only to find it locked. Its kind of sketchy to be trying to break into random people’s houses you know…”
+Red house is a room. Red house is northeast of Residental area.
 
+Green house is a room. Green house is southeast of Residental area.
 
-Green house is a room. Green house is southeast of Residential area. Description of Green house is  “You approach the front door of the house and try to open the door only to find it locked. Its kind of sketchy to be trying to break into random people’s houses you know…”
+The Johnson's Hall is a room. Johnson's hall is east of Residental area. [describe as blue house]
 
+The Johnson's Office is a room. it is west of Johnson's hall.
 
-The Johnson's Hall is a room. Johnson's hall is east of Residential area. [describe as blue house] The description of Johnson's Hall is  “Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven’t seen a single person yet.
-You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, [quotation mark] H-hello?[quotation mark] but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms to the east, a study to the west, and the exit is to the south.”
+The Johnson's Dining Area is a room. it is north of Johnson's office.
 
-Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedroom door is northeast of Johnson's Hall. Description of Bedroom door is “There are two doors that lead into bedrooms. One of them is slightly ajar and allows you to see an empty pink room that probably belongs to the girl you saw in the picture on the doctor’s desk. The other door is closed."
+The Johnson's Daughter's Bedroom is a room. it is east of Johnson's hall.
 
-The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”
-
-The Johnson's Kitchen is a room. it is north of Johnson's office. Description of Johnson's Kitchen is “You walk into the pristine kitchen and take a look around. You can see all of the basic kitchen appliances around the room. There is only one part of the room that seems out of place. There is a cupboard door missing for the compartment under the sink.”
-
-Cupboard is in kitchen. Cupboard is a container. Cupboard is fixed in place. 
-
-Toolbox is an object. Toolbox is in the Cupboard. Description of Toolbox is  “You take the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
-
-The Johnson's Parent's Bedroom is a room. it is east of Johnson's hall. Description of Johnson's Parent's Bedroom is “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”.
-instead of going east from Johnson's hall:
-	if beenInBedroom is false:
-		say “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”;
-		now beenInBedroom is true;
-	else:
-		say "You refuse to enter that horrid room again.".
-[need to make player unable to enter parent bedroom again. description will be “You refuse to enter that horrid room again.”]
-
+The Johnson's Parent's Bedroom is a room. it is northeast of Johnson's hall.
+[START OF BOTTOM PART TODO TODO TODO]
 [-----HOSPITAL-----]
 
 The Hospital lobby is a room.  Hospital lobby is west of town hall. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. To the east you see a set of stairs leading up to a second floor. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”
@@ -130,12 +115,13 @@ The Doctor's office is north of Hospital hallway. Description of Doctor's office
 	Desk is in doctor's office. Desk is object. Desk is fixed in place.
 	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on <orange shirt day>?' Your closer inspection of the area has brought to your attention a drawer on the other side of the desk.”
 	
-	The Desk support a desk drawer. the desk drawer is closed. the desk drawer is locked. desk drawer is fixed in place. Description of locked desk drawers is “You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”
+	The Desk support a drawer. the desk drawer is closed. the desk drawer is locked. desk drawer is fixed in place. Description of locked desk drawers is “You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”
 	
 	Carry out opening desk drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that I once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
 	
 	Goggles is an object. Goggles is in the desk drawer.  Goggles is wearable.
- 
+	
+
 Chapter 2 - Meta - Computer
 
 
@@ -146,7 +132,7 @@ currUsr is a text variable.
 currMch is a text variable.
 currDirTxt is a text variable.
 currDir is a list of text variable.
-KnowCount is a number that varies;
+
 
 currUsr is "".
 currMch is "TownHall-02".
@@ -223,17 +209,10 @@ After reading a command when the command prompt matches the regular expression "
 		[say "[filename]";]
 		if filename is a url listed in Table of fileContent:
 			choose row with url of filename in table of FileContent;
-			now isRead entry is 1;
+			change isRead entry to 1;
 			say "-----[line break][fileContent corresponding to url of filename in table of FileContent][line break]-----";
 		else:
 			say "file not found";
-	else if (strcmd matches the text "getKnowledge"):
-		now knowCount is 0;
-		repeat with N running from 1 to the number of rows in the table of fileContent:
-			choose row N in the table of fileContent; 
-			if isRead entry > 0:
-				increase knowcount by 1;
-		say "[knowCount]";	
 	else:
 		say "Command not recognized";
 	reject the player's command.
@@ -260,21 +239,6 @@ url	isRead (a number)	fileContent
 
 Chapter - 3 - Player status
 
-knowOrangeDay is a truth state that varies. [knowOrangeDay is false.]
-knowDeathRate is a truth state that varies. [KnowDeathRate is false.]
-knowComputer is a truth state that varies. [KnowComputer is false.]
-beenInBedroom is a truth state that varies.
-unFumigatedTOConfirm is a truth state that varies.
+knowOrangeDay is a truth state that varies. knowOrangeDay is false.
+knowDeathRate is a truth state that varies. KnowDeathRate is false.
 
-An every turn rule:
-	[say "CheckKnowledge RAN";]
-	now knowCount is 0;
-	repeat with N running from 1 to the number of rows in the table of fileContent:
-		choose row N in the table of fileContent; 
-		if isRead entry > 0:
-			increase knowcount by 1;
-	if knowCount > 2:
-		now knowComputer is true.
-
-instead of jumping:
-	say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".
