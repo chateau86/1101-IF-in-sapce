@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-0x0295EC68" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Inform 7 for Windows</generator>
-  <activeNode nodeId="node-0x0295EC68"/>
+  <activeNode nodeId="node-0x02DC9BF8"/>
   <item nodeId="node-0x0295EC68">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">It is the year 2315, you are an astronaut who embarks on a journey a new planet, due to overpopulation and climate change destroying valuable resources on Earth. The planet is located in a different galaxy and accessible only through a wormhole. The planet, Xuria, has been found to be teeming with exotic plant life, quite habitable compared to Earth.&#x000A;&#x000A;&#x000A;---------------------------------------------------------------------------------------------------------------&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;You can't believe you've finally made it. It seems like forever since you boarded the small rocket. Your journey from Earth to the planet Xuria has taken almost a year, even though you were traveling as close to light speed as is possible. You were chosen from random lottery to be sent to join the experimental colony on Xuria because Earth is falling apart due to climate change and dwindling resources. It is time to start your new life on this great new planet. However you should probably put on your gear first. There might be fire or sharp fragments of the ship outside after that rough landing.&#x000A;&#x000A;Welcome&#x000A;A Space Journey&#x000A;Release 1 / Serial number 150413 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Mid Deck&#x000A;The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">NO</temporary>
     <children>
       <child nodeId="node-0x02D24EB0"/>
+      <child nodeId="node-0x02DD0F98"/>
     </children>
   </item>
   <item nodeId="node-0x02D24EB0">
@@ -441,6 +442,289 @@
   <item nodeId="node-0x02D33020">
     <command xml:space="preserve">walk e</command>
     <result xml:space="preserve">You refuse to enter that horrid room again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02DD0F98">
+    <command xml:space="preserve">walk e</command>
+    <result xml:space="preserve">Your Room&#x000A;The majority of space in the room is taken up by the chest that you kept all your belongings in. Next to your makeshift "bed" is a small nightstand.&#x000A;&#x000A;You can see Chest (closed) and Nightstand (on which are a lamp and a drawer (closed)) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D32D10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D32D10">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.&#x000A;&#x000A;You open the drawer, revealing candy wrapper and ID card.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D32FB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D32FB0">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">candy wrapper: Taken.&#x000A;ID card: Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9098"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9098">
+    <command xml:space="preserve">walk w</command>
+    <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9B88"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9B88">
+    <command xml:space="preserve">walk d</command>
+    <result xml:space="preserve">Lower Deck&#x000A;There is a hatch on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck.&#x000A;&#x000A;You can see Ship door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9338"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9338">
+    <command xml:space="preserve">open door with card</command>
+    <result xml:space="preserve">You unlock Ship door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9878"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9878">
+    <command xml:space="preserve">walk n</command>
+    <result xml:space="preserve">(first opening Ship door)&#x000A;&#x000A;parking lot&#x000A;You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria's atmosphere is to Earth's. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.&#x000A;&#x000A;You can see Ship door and Spaceplane (empty) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9958"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9958">
+    <command xml:space="preserve">walk n</command>
+    <result xml:space="preserve">town square&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words "Town Hall" displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC93A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC93A8">
+    <command xml:space="preserve">walk n</command>
+    <result xml:space="preserve">Town Hall&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.&#x000A;&#x000A;You can see Computer here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9D48"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9D48">
+    <command xml:space="preserve">walk n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC98E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC98E8">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">It's a UNIX system! I know this!&#x000A;&#x000A;Enter username :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9798"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9798">
+    <command xml:space="preserve">examine Computer</command>
+    <result xml:space="preserve">Bad Username&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9028"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9028">
+    <command xml:space="preserve">examine Computer desk</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine Computer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9108"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9108">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Town Hall&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.&#x000A;&#x000A;You can see Computer here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9A38"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9A38">
+    <command xml:space="preserve">examine computerdesk</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9568"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9568">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">It's a UNIX system! I know this!&#x000A;&#x000A;Enter username :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9CD8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9CD8">
+    <command xml:space="preserve">look at computer</command>
+    <result xml:space="preserve">Bad Username&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9AA8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9AA8">
+    <command xml:space="preserve">examine computer</command>
+    <result xml:space="preserve">It's a UNIX system! I know this!&#x000A;&#x000A;Enter username :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC91E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC91E8">
+    <command xml:space="preserve">john12</command>
+    <result xml:space="preserve">Password :</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9258"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9258">
+    <command xml:space="preserve">CoHoBaSt</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC92C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC92C8">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/&#x000A;Contain folder: Download and Documents&#x000A;Contain file: &#x000A;&#x000A;john12@TownHall-02:/home/john12/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC95D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC95D8">
+    <command xml:space="preserve">cd Download</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Download/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9DB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9DB8">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/Download/&#x000A;Contain folder: B979Manual&#x000A;Contain file: &#x000A;&#x000A;john12@TownHall-02:/home/john12/Download/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9B18"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9B18">
+    <command xml:space="preserve">cd B979Manual</command>
+    <result xml:space="preserve">john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9418"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9418">
+    <command xml:space="preserve">ls</command>
+    <result xml:space="preserve">At: /home/john12/Download/B979Manual/&#x000A;Contain folder: &#x000A;Contain file: FCOM.txt and MxManual.txt&#x000A;&#x000A;john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02DC9BF8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02DC9BF8">
+    <command xml:space="preserve">cat MxManual.txt</command>
+    <result xml:space="preserve">-----&#x000A;Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either.&#x000A;-----&#x000A;john12@TownHall-02:/home/john12/Download/B979Manual/$&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>

@@ -58,6 +58,8 @@ The Your Room is a room. "The majority of space in the room is taken up by the c
 		Carry out opening drawer: say “You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.”
 	
 		candy wrapper is in drawer.
+instead of unlocking ship door with candy wrapper:
+	say "you high?".
 		
 		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the ship door.
 
@@ -83,7 +85,7 @@ instead of entering spaceplane:
 The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
 
 The Town Hall is a room. Town hall is north of Town square. Description of Town Hall is “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.”
-ComputerDesk is an object. ComputerDesk is in town hall. ComputerDesk is fixed in place. Computer is an object. Computer is on computer desk. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: Hide proper docs somewhere]
+Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: Hide proper docs somewhere]
 
 [-----RESIDENTAL-----]
 The Residential area is east of Town square. Description of Residential area is “You walk towards the residential area hoping that you’ll finally find someone else. Its kind of creepy that no one has come to greet you yet. As you approach the residential area you see a line of houses that are all the same except for the color. The houses closest to you are green, blue, and red. To the east is the town square.”
