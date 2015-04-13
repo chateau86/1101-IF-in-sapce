@@ -110,7 +110,7 @@ Toolbox is an object. Toolbox is in the Cupboard. Description of Toolbox is  “
 The Johnson's Parent's Bedroom is a room. it is east of Johnson's hall. Description of Johnson's Parent's Bedroom is “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”
 
 [need to make player unable to enter parent bedroom again. description will be “You refuse to enter that horrid room again.”]
-
+[END OF TOP PART: TODO TODO TODO]
 [-----HOSPITAL-----]
 
 The Hospital lobby is a room.  Hospital lobby is west of town hall.
@@ -131,7 +131,7 @@ currUsr is a text variable.
 currMch is a text variable.
 currDirTxt is a text variable.
 currDir is a list of text variable.
-KnowCount is a number that varies;
+
 
 currUsr is "".
 currMch is "TownHall-02".
@@ -208,17 +208,10 @@ After reading a command when the command prompt matches the regular expression "
 		[say "[filename]";]
 		if filename is a url listed in Table of fileContent:
 			choose row with url of filename in table of FileContent;
-			now isRead entry is 1;
+			[change isRead entry to 1;]
 			say "-----[line break][fileContent corresponding to url of filename in table of FileContent][line break]-----";
 		else:
 			say "file not found";
-	else if (strcmd matches the text "getKnowledge"):
-		now knowCount is 0;
-		repeat with N running from 1 to the number of rows in the table of fileContent:
-			choose row N in the table of fileContent; 
-			if isRead entry > 0:
-				increase knowcount by 1;
-		say "[knowCount]";	
 	else:
 		say "Command not recognized";
 	reject the player's command.
@@ -245,19 +238,6 @@ url	isRead (a number)	fileContent
 
 Chapter - 3 - Player status
 
-knowOrangeDay is a truth state that varies. [knowOrangeDay is false.]
-knowDeathRate is a truth state that varies. [KnowDeathRate is false.]
-knowComputer is a truth state that varies. [KnowComputer is false.]
+knowOrangeDay is a truth state that varies. knowOrangeDay is false.
+knowDeathRate is a truth state that varies. KnowDeathRate is false.
 
-An every turn rule:
-	[say "CheckKnowledge RAN";]
-	now knowCount is 0;
-	repeat with N running from 1 to the number of rows in the table of fileContent:
-		choose row N in the table of fileContent; 
-		if isRead entry > 0:
-			increase knowcount by 1;
-	if knowCount > 2:
-		now knowComputer is true.
-
-instead of jumping:
-	say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer]".
