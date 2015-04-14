@@ -9,6 +9,8 @@ Underlying relates various things to one thing. The verb to underlie means the u
 		now every thing which underlies the noun is carried by the player;
 		now every thing which underlies the noun does not underlie the noun.
 
+understand "install [something] onto [vehicle]" as inserting it into.
+
 Chapter 1 - Story
 
 
@@ -59,7 +61,7 @@ The Your Room is a room. "The majority of space in the room is taken up by the c
 	
 		candy wrapper is in drawer.
 instead of unlocking ship door with candy wrapper:
-	say "you high?".
+	say "That's not how any of this works!".
 		
 		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the ship door.
 
@@ -70,22 +72,39 @@ instead of going west from mid deck:
 The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
 	Spaceplane is a vehicle. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
+instead of inserting New Ship Door into spacePlane:
+	now new ship door is nowhere;
+	now spaceplane is not doorbroken.
+	
 instead of entering spaceplane:
 	if (spaceplane is doorBroken):
 		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...";[TODO: Proper logic]
-	[else if ([TODO: all clue solved]):
-		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";]
+	else if (knowEverything is false):
+		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";
 	else if (spaceplane is fumigated):
 		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
-	else if unFumigatedTOConfirm is true:
+	else if unFumigatedTOConfirm is 2:
 		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
+	else if unFumigatedTOConfirm is 1:
+		say "There are arguments for and against doing this. ";
+		increase unFumigatedTOConfirm by 1;
 	else:
-		say “As you slide myself into the pilot seat, you second guess my own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should I do it...”.
+		say “As you slide yourself into the pilot seat, you second guess your own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should you do it ...”;
+		increase unFumigatedTOConfirm by 1.
 
 The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
 
 The Town Hall is a room. Town hall is north of Town square. Description of Town Hall is “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.”
-Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: Hide proper docs somewhere]
+Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: User and password]
+New Ship door is an object. New ship door is in town hall. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
+Old book is an object. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
+These are commands to show your prospective m'lady[line break]
+cd <folder name> - move into the folder <folder name> use 'cd .. ' to get out of the folder. [line break]
+ls - list directories and files in the current folder.[line break]
+cat <filename> - read the target file. Ex. 'cat blog.txt' shows the content of the file blog.txt. [line break]
+Now we are ready for some real works. [line break]
+[line break]
+[roman type]And that's where the rest of the pages were torn off. 'Getting chicks with Linux', huh? I almost grew a neckbeard just by reading that.".
 
 [-----RESIDENTAL-----]
 The Residential area is east of Town square. Description of Residential area is “You walk towards the residential area hoping that you’ll finally find someone else. Its kind of creepy that no one has come to greet you yet. As you approach the residential area you see a line of houses that are all the same except for the color. The houses closest to you are green, blue, and red. To the east is the town square.”
@@ -117,7 +136,6 @@ instead of going east from Johnson's hall:
 		now beenInBedroom is true;
 	else:
 		say "You refuse to enter that horrid room again.".
-[need to make player unable to enter parent bedroom again. description will be “You refuse to enter that horrid room again.”]
 
 [-----HOSPITAL-----]
 
@@ -266,7 +284,9 @@ knowOrangeDay is a truth state that varies. [knowOrangeDay is false.]
 knowDeathRate is a truth state that varies. [KnowDeathRate is false.]
 knowComputer is a truth state that varies. [KnowComputer is false.]
 beenInBedroom is a truth state that varies.
-unFumigatedTOConfirm is a truth state that varies.
+unFumigatedTOConfirm is a number that varies.
+unFumigatedTOConfirm is 0.
+knowEverything is a truth state that varies.
 
 An every turn rule:
 	[say "CheckKnowledge RAN";]
