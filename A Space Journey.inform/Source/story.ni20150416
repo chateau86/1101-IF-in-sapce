@@ -32,14 +32,13 @@ The Mid Deck is a room. "The interior of the rocketship is almost entirely white
 	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.".
 	[Computer is an object. computer is in mid deck. ][for testing]
-	gas tank is in mid deck.  gas tank is a container. gas tank is closed. gas tank is openable.
+	gas tank is an object. gas tank is a container. gas tank is in mid deck.
+instead of opening gas tank in Spaceplane:
+	say "The gas spread around the plane, killing all bacteria.";
+	now spaceplane is fumigated.
 
-instead of opening gas tank:
-	if player is in parking lot:
-		say "The gas spread around the plane, killing all bacteria.";
-		now spaceplane is fumigated;
-	else:
-		say "I shouldn't waste the gas.".
+instead of opening gas tank in Spaceplane:
+	say "I shouldn't waste the gas.";
 
 
 The Lower Deck is a room. "There is a ship door on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
@@ -84,39 +83,29 @@ The parking lot is a room. “You look around you and see a surprising amount of
 instead of inserting New Ship Door into spacePlane:
 	now new ship door is nowhere;
 	now spaceplane is not doorbroken.
-
-before entering spaceplane:
+	
+instead of entering spaceplane:
 	if (spaceplane is doorBroken):
-		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to [italic type]install [roman type]it...";[TODO: Proper logic]
-		move the player to parking lot;
-		reject the player's command;
+		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to install it...";[TODO: Proper logic]
 	else if (knowEverything is false):
-		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery. you left the spaceplane for clues (and some fresh air).";
-		move the player to parking lot;
-		reject the player's command;
+		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";
 	else if (spaceplane is fumigated):
 		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
-		end the story saying "Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to life as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
 	else if unFumigatedTOConfirm is 2:
 		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
-		end the story saying "Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to lifelife as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
 	else if unFumigatedTOConfirm is 1:
-		say "'There are arguments for and against doing this.' [line break]You left the spaceplane to clear your mind.";
+		say "There are arguments for and against doing this. ";
 		increase unFumigatedTOConfirm by 1;
-		move the player to parking lot;
-		reject the player's command;
 	else:
-		say “As you slide yourself into the pilot seat, you second guess your own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should you do it ...
-		[line break]You left the spaceplane to clear your mind.”;
-		increase unFumigatedTOConfirm by 1;
-		move the player to parking lot;
-		reject the player's command.
+		say “As you slide yourself into the pilot seat, you second guess your own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should you do it ...”;
+		increase unFumigatedTOConfirm by 1.
 
-The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
+The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. You cannot see any other colonists in the immediate area.”
 
 The Town Hall is a room. Town hall is north of Town square. Description of Town Hall is "You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west”
 
 Portrait is an object. Portrait is fixed in place. Portrait is in town hall. description of portrait is "A white haired, solemn looking man stares out at you from the canvas he has been painted on. Creepy." 
+
 Town Hall closet is a room. town hall closet is west of town hall. Description of town hall closet is “You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.”
 
 Cleaning supplies are an object. Cleaning supplies are fixed in place. Cleaning supplies are in town hall closet. Description of cleaning supplies is "Various cleaning products that are good at cleaning up space dirt."
@@ -126,7 +115,6 @@ Computer is an object. Computer is in town hall. Computer is fixed in place. Des
 New Ship door is an object. New ship door is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
 Old book is an object. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
 These are commands to show your prospective m'lady[line break]
-WARNING: The system is CaSe-sEnsITivE! [line break]
 cd <folder name> - move into the folder <folder name> use 'cd .. ' to get out of the folder. [line break]
 ls - list directories and files in the current folder.[line break]
 cat <filename> - read the target file. Ex. 'cat blog.txt' shows the content of the file blog.txt. [line break]
@@ -146,10 +134,12 @@ Green house is a room. Green house is southeast of Residential area. Description
 
 The Johnson's Hall is a room. Johnson's hall is northeast of Residential area. [describe as blue house] The description of Johnson's Hall is  “Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven’t seen a single person yet.
 You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, [quotation mark] H-hello?[quotation mark] but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms, one to the southeast and the other to the east, a study to the west, and the exit is to the southwest.”
-[TODO: No player allowed through door]
-Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedroom door is southeast of Johnson's Hall. Description of Bedroom door is “The door that lead into the bedroom is slightly ajar and allows you to see an empty pink room that probably belongs to the girl you saw in the picture on the doctor’s desk."
+
+Bedroom door is a room. Bedroom door is southeast of Johnson's Hall. Description of Bedroom door is “The door that lead into the bedroom is slightly ajar and allows you to see an empty pink room that probably belongs to the girl you saw in the picture on the doctor’s desk."
 
 The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”
+
+pictures is an object. pictures is in johnson's office. Description of pictures is "Varous cliche family photos and holiday cards."
 
 Office key is an object. Office key unlocks desk-drawer. Office key is in johnson's office. 
 
@@ -157,8 +147,10 @@ The Johnson's Kitchen is a room. it is north of Johnson's hall. Description of J
 
 Cupboard is in kitchen. Cupboard is a container. Cupboard is fixed in place. Description of cupboard is “You look under the sink into the cupboard and see a battered looking toolbox and some cleaning products.”
 
-Toolbox is an object. Toolbox is in the Cupboard. Description of Toolbox is  “You take the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
+Toolbox is an object. Toolbox is in the Cupboard. Description of Toolbox is  “You take out the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
+
 Cleaning products is an object. cleaning products is in cupboard. cleaning products is fixed in place. Description of cleaning products is “‘Kills 99% of germs!’ Only Earth’s germs, as it turns out. So much for truth in advertising.”
+
 
 The Johnson's Parent's Bedroom is a room. it is east of Johnson's hall. Description of Johnson's Parent's Bedroom is “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”.
 instead of going east from Johnson's hall:
@@ -184,6 +176,7 @@ The Doctor's office is north of Hospital hallway. Description of Doctor's office
 	
 	Desk is in doctor's office. Desk is object. Desk is fixed in place.
 	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on X/XX?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.” 
+	
 	An openable container called the Desk-Drawer is in doctor's office. The desk-drawer is locked. The desk-drawer is fixed in place. Description of desk-drawer is "You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”
 	
 	Carry out opening desk-drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that I once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
@@ -270,8 +263,8 @@ After reading a command when the command prompt matches the regular expression "
 	else if (strCmd matches the text "ls") or  (strCmd matches the text "dir")  :
 		say "At: [currDirTxt][line break]";
 		choose row with dir of currDirTxt in the table of fileindir;
-		say "Contain folder: [memberFolder entry in brace notation][line break]";
-		say "Contain file: [memberFile entry in brace notation][line break]";
+		say "Contain folder: [memberFolder entry][line break]";
+		say "Contain file: [memberFile entry][line break]";
 	else if (strCmd matches the text "cat"):
 		let fileName be "[currDirTxt][strPAram]";
 		[say "[filename]";]
@@ -310,7 +303,7 @@ Table of fileContent
 url	isRead (a number)	fileContent
 "/home/john12/Download/B979Manual/FCOM.txt"	0	"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
 "/home/john12/Download/B979Manual/MxManual.txt"	0	"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."			
-"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date XX/XX, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ..."	
+"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date XX/XX, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. Also the doctor is rambling on about some tetrachloro somthing or other that might help..."	
 
 Chapter - 3 - Player status
 
@@ -336,7 +329,7 @@ An every turn rule:
 			if (knowComputer is true):
 				if (beenInBedroom is true):
 					now knowEverything is true;
-					[say "know all".]
+					say "know all".
 
 instead of jumping:
 	[say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".]
