@@ -29,10 +29,10 @@ say "[italic type]It is the year 2315, you are an astronaut who embarks on a jou
 
 
 The Mid Deck is a room. "The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.” East of the Mid Deck is Your Room. West of the Mid Deck is the Bathroom. Up from the Mid Deck is the Flight Deck. Down from the Mid Deck is the Lower Deck.
-	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
+	Brochure is an object. Brochure is undescribed. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.".
 	[Computer is an object. computer is in mid deck. ][for testing]
-	gas tank is in mid deck.  gas tank is a container. gas tank is closed. gas tank is openable.
+	gas tank is in mid deck.  gas tank is a container. gas tank is undescribed. gas tank is closed. gas tank is openable.
 
 instead of opening gas tank:
 	if player is in parking lot:
@@ -51,35 +51,35 @@ The Flight Deck is a room. The Flight Deck is up from the Mid Deck.
 
 
 The Your Room is a room. "The majority of space in the room is taken up by the chest that you kept all your belongings in. Next to your makeshift 'bed' is a small nightstand." Your Room is east of the Mid Deck.
-	Chest is in your room. Chest is an object. Chest is fixed in place. Chest is closed. Chest is openable. 
+	Chest is in your room. Chest is undescribed. Chest is an object. Chest is fixed in place. Chest is closed. Chest is openable. 
 	Carry out opening chest: say "Inside the chest you see a neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey."
 
-		Uniform is an object. Uniform is in the chest. Uniform is wearable.
+		Uniform is an object. Uniform is in the chest. Uniform is wearable. Uniform is undescribed.
 		description of uniform is "A neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey.".
 		Carry out wearing:
 			say "You pull on the comfortable outfit and get ready to leave your rocket for good."
 			
-	Nightstand is in your room. Nightstand is object. Nightstand is fixed in place.
+	Nightstand is in your room. Nightstand is undescribed. Nightstand is object. Nightstand is fixed in place.
 	Description of nightstand is “The nightstand is a small table with a single drawer. It has a small lamp which is providing light for the tiny room.”
 	
-		The nightstand support a lamp. the lamp is fixed in place. 
+		The nightstand support a lamp. the lamp is fixed in place. the lamp is undescribed. 
 		Description of lamp is "$1million in R&D gave us this $5.99 IKEA lamp. Everything is more expensive in Aerospace, they said."
 	
-		The nightstand support a drawer. the drawer is closed. the drawer is openable. drawer is fixed in place.
+		The nightstand support a drawer. the drawer is undescribed. the drawer is closed. the drawer is openable. drawer is fixed in place.
 		Carry out opening drawer: say “You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.”
 	
-		candy wrapper is in drawer.
+		candy wrapper is in drawer. candy wrapper is undescribed.
 instead of unlocking ship door with candy wrapper:
 	say "That's not how any of this works!".
 		
-		ID card is in the drawer. id card underlie the candy wrapper. it unlocks the ship door.
+		ID card is in the drawer. id card is undescribed. id card underlie the candy wrapper. it unlocks the ship door.
 
 The Bathroom is a room. The Bathroom is west of the Mid Deck.
 instead of going west from mid deck:
 	say "You’ve already done everything you have to in here today.”.
 	
 The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
-	Spaceplane is a vehicle. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
+	Spaceplane is a vehicle. space plane is undescribed. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
 instead of inserting New Ship Door into spacePlane:
 	now new ship door is nowhere;
@@ -119,12 +119,12 @@ The Town Hall is a room. Town hall is north of Town square. Description of Town 
 Portrait is an object. Portrait is fixed in place. Portrait is in town hall. description of portrait is "A white haired, solemn looking man stares out at you from the canvas he has been painted on. Creepy." 
 Town Hall closet is a room. town hall closet is west of town hall. Description of town hall closet is “You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.”
 
-Cleaning supplies are an object. Cleaning supplies are fixed in place. Cleaning supplies are in town hall closet. Description of cleaning supplies is "Various cleaning products that are good at cleaning up space dirt."
+Cleaning supplies are an object. Cleaning supplies are undescribed. Cleaning supplies are fixed in place. Cleaning supplies are in town hall closet. Description of cleaning supplies is "Various cleaning products that are good at cleaning up space dirt."
 
 Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: User and password]
 
-New Ship door is an object. New ship door is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
-Old book is an object. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
+New Ship door is an object. New ship door is undescribed. Computer is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
+Old book is an object. Old book is undescribed. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
 These are commands to show your prospective m'lady[line break]
 WARNING: The system is CaSe-sEnsITivE! [line break]
 cd <folder name> - move into the folder <folder name> use 'cd .. ' to get out of the folder. [line break]
@@ -151,13 +151,13 @@ Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedro
 
 The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”
 
-Office key is an object. Office key unlocks desk-drawer. Office key is in johnson's office. 
+Office key is an object. Office key is undescribed. Office key unlocks desk-drawer. Office key is in johnson's office. 
 
 The Johnson's Kitchen is a room. it is north of Johnson's hall. Description of Johnson's Kitchen is “You walk into the pristine kitchen and take a look around. You can see all of the basic kitchen appliances around the room. There is only one part of the room that seems out of place. There is a cupboard door missing for the compartment under the sink.”
 
-Cupboard is in kitchen. Cupboard is a container. Cupboard is fixed in place. Description of cupboard is “You look under the sink into the cupboard and see a battered looking toolbox and some cleaning products.”
+Cupboard is in kitchen. Cupboard is a container. Cupboard is undescribed. Cupboard is fixed in place. Description of cupboard is “You look under the sink into the cupboard and see a battered looking toolbox and some cleaning products.”
 
-Toolbox is an object. Toolbox is in the Cupboard. Description of Toolbox is  “You take the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
+Toolbox is an object. Toolbox is undescribed. Toolbox is in the Cupboard. Description of Toolbox is  “You take the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
 Cleaning products is an object. cleaning products is in cupboard. cleaning products is fixed in place. Description of cleaning products is “‘Kills 99% of germs!’ Only Earth’s germs, as it turns out. So much for truth in advertising.”
 
 The Johnson's Parent's Bedroom is a room. it is east of Johnson's hall. Description of Johnson's Parent's Bedroom is “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”.
@@ -178,7 +178,8 @@ The Hospital hallway is up of Hospital lobby. Description of Hospital hallway is
 
 Reception counter is an object. Reception counter is fixed in place. Reception counter is in hospital lobby. Description of reception counter is "The reception desk has many different files on it that look too important to touch. You cannot see the receptionist, or anyone else for that matter, in the immediate area.”
 
-Bulletin Board is an object. Bulletin board is fixed in place. Bulletin board is in Hospital Lobby. Description of bulletin board is "You take a closer look and see flyers and papers for a multitude of things. There are some displaying deals for space plant control and other services as well as a brightly colored flyer encouraging people to participate in Wear Orange to Work Day.”
+
+Bulletin Board is an object. Bulletin board is undescribed. Bulletin board is fixed in place. Bulletin board is in Hospital Lobby. Description of bulletin board is "You take a closer look and see flyers and papers for a multitude of things. There are some displaying deals for space plant control and other services as well as a brightly colored flyer encouraging people to participate in Wear Orange to Work Day.”
 
 The Doctor's office is north of Hospital hallway. Description of Doctor's office is "You approach the slightly open door and see a nameplate that reads Dr. Johnson next to it. You enter the office and your attention is immediately drawn to the wooden desk taking up most of the room. There are papers strewn all over it as well as a photo of a tall man and a woman and a child standing in front of a blue house that looks as though it is located on this planet. The only other furniture in the room is a bookcase filled with medical journals and other books with names you cannot pronounce.” 
 	
@@ -188,7 +189,7 @@ The Doctor's office is north of Hospital hallway. Description of Doctor's office
 	
 	Carry out opening desk-drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that I once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
 	
-	Goggles is an object. Goggles is in the desk-drawer.  Goggles is wearable.
+	Goggles is an object. Goggles is undescribed. Goggles is in the desk-drawer.  Goggles is wearable.
  
 Chapter 2 - Meta - Computer
 
