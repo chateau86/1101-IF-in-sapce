@@ -35,7 +35,7 @@ All that performance was paid for with reduced structure, something you just dis
 	gas tank is in mid deck.  gas tank is a container. gas tank is closed. gas tank is openable.
 
 instead of opening gas tank:
-	if player is in spaceplane:
+	if player is in parking lot:
 		say "The gas spread around the plane, killing all bacteria.";
 		now spaceplane is fumigated;
 	else:
@@ -88,9 +88,12 @@ instead of inserting New Ship Door into spacePlane:
 before entering spaceplane:
 	if (spaceplane is doorBroken):
 		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...";[TODO: Proper logic]
-		now the player is in parking lot;
+		move the player to parking lot;
+		reject the player's command;
 	else if (knowEverything is false):
-		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";
+		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery. you left the spaceplane for clues (and some fresh air).";
+		move the player to parking lot;
+		reject the player's command;
 	else if (spaceplane is fumigated):
 		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
 		end the story;
@@ -98,11 +101,16 @@ before entering spaceplane:
 		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
 		end the story;
 	else if unFumigatedTOConfirm is 1:
-		say "There are arguments for and against doing this. ";
+		say "'There are arguments for and against doing this.' [line break]You left the spaceplane to clear your mind.";
 		increase unFumigatedTOConfirm by 1;
+		move the player to parking lot;
+		reject the player's command;
 	else:
-		say “As you slide yourself into the pilot seat, you second guess your own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should you do it ...”;
-		increase unFumigatedTOConfirm by 1.
+		say “As you slide yourself into the pilot seat, you second guess your own decision. If this space virus make it’s way back to Earth, the human civilization would instantly be over. Should you do it ...
+		[line break]You left the spaceplane to clear your mind.”;
+		increase unFumigatedTOConfirm by 1;
+		move the player to parking lot;
+		reject the player's command.
 
 The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.”
 
@@ -117,6 +125,7 @@ Computer is an object. Computer is in town hall. Computer is fixed in place. Des
 New Ship door is an object. New ship door is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
 Old book is an object. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
 These are commands to show your prospective m'lady[line break]
+WARNING: The system is CaSe-sEnsITivE! [line break]
 cd <folder name> - move into the folder <folder name> use 'cd .. ' to get out of the folder. [line break]
 ls - list directories and files in the current folder.[line break]
 cat <filename> - read the target file. Ex. 'cat blog.txt' shows the content of the file blog.txt. [line break]
@@ -259,8 +268,8 @@ After reading a command when the command prompt matches the regular expression "
 	else if (strCmd matches the text "ls") or  (strCmd matches the text "dir")  :
 		say "At: [currDirTxt][line break]";
 		choose row with dir of currDirTxt in the table of fileindir;
-		say "Contain folder: [memberFolder entry][line break]";
-		say "Contain file: [memberFile entry][line break]";
+		say "Contain folder: [memberFolder entry in brace notation][line break]";
+		say "Contain file: [memberFile entry in brace notation][line break]";
 	else if (strCmd matches the text "cat"):
 		let fileName be "[currDirTxt][strPAram]";
 		[say "[filename]";]

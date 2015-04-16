@@ -483,10 +483,10 @@
   </item>
   <item nodeId="node-0x028D2FE8">
     <command xml:space="preserve">walk w</command>
-    <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Mid Deck&#x000A;The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.&#x000A;&#x000A;You can see Brochure and gas tank (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D2AA8"/>
@@ -539,10 +539,10 @@
   </item>
   <item nodeId="node-0x028D2B18">
     <command xml:space="preserve">walk n</command>
-    <result xml:space="preserve">Town Hall&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words Town Hall displayed over the doors. You cannot see any other colonists in the immediate area.&#x000A;&#x000A;You can see Computer, New Ship door and Old book here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Town Hall&#x000A;You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west&#x000A;&#x000A;You can see Computer and Old book here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D2CD8"/>
@@ -753,10 +753,10 @@
   </item>
   <item nodeId="node-0x028D8E78">
     <command xml:space="preserve">take door</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D8E08"/>
@@ -797,10 +797,10 @@
   </item>
   <item nodeId="node-0x028D91F8">
     <command xml:space="preserve">enter spaceplane</command>
-    <result xml:space="preserve">The door is partially disassembled. Even if you could get in, it's not flyable like this. Maybe if you knew where the parts were and how to put it back together...&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The door is partially disassembled. Even if you could get in, it's not flyable like this. Maybe if you knew where the parts were and how to put it back together...&#x000A;&#x000A;parking lot&#x000A;You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria's atmosphere is to Earth's. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.&#x000A;&#x000A;You can see Ship door and Spaceplane (empty) here.&#x000A;&#x000A;You get into Spaceplane.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D8698"/>
@@ -808,10 +808,10 @@
   </item>
   <item nodeId="node-0x028D8698">
     <command xml:space="preserve">install door onto spaceplane</command>
-    <result xml:space="preserve">(New Ship door onto Spaceplane)&#x000A;&gt;</result>
+    <result xml:space="preserve">You haven't got that.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D8D98"/>
@@ -819,10 +819,10 @@
   </item>
   <item nodeId="node-0x028D8D98">
     <command xml:space="preserve">enter spaceplane</command>
-    <result xml:space="preserve">The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The door is partially disassembled. Even if you could get in, it's not flyable like this. Maybe if you knew where the parts were and how to put it back together...&#x000A;&#x000A;parking lot&#x000A;You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria's atmosphere is to Earth's. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.&#x000A;&#x000A;You can see Ship door and Spaceplane (empty) here.&#x000A;&#x000A;You get into Spaceplane.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
   </item>
   <item nodeId="node-0x028D8708">
@@ -1011,10 +1011,10 @@
   </item>
   <item nodeId="node-0x028D8BD8">
     <command xml:space="preserve">enter spaceplane</command>
-    <result xml:space="preserve">The door is partially disassembled. Even if you could get in, it's not flyable like this. Maybe if you knew where the parts were and how to put it back together...&#x000A;&#x000A;parking lot&#x000A;You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria's atmosphere is to Earth's. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.&#x000A;&#x000A;You can see Ship door and Spaceplane (empty) here.&#x000A;&#x000A;You get into Spaceplane.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">The door is partially disassembled. Even if you could get in, it's not flyable like this. Maybe if you knew where the parts were and how to put it back together...&#x000A;&#x000A;parking lot&#x000A;You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria's atmosphere is to Earth's. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.&#x000A;&#x000A;You can see Ship door and Spaceplane (empty) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x028D8C48"/>
@@ -1022,7 +1022,7 @@
   </item>
   <item nodeId="node-0x028D8C48">
     <command xml:space="preserve">walk n</command>
-    <result xml:space="preserve">town square (in Spaceplane)&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words "Town Hall" displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">town square&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words "Town Hall" displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1033,7 +1033,7 @@
   </item>
   <item nodeId="node-0x028D9348">
     <command xml:space="preserve">walk n</command>
-    <result xml:space="preserve">Town Hall (in Spaceplane)&#x000A;You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west&#x000A;&#x000A;You can see Computer and Old book here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Town Hall&#x000A;You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west&#x000A;&#x000A;You can see Computer and Old book here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1055,7 +1055,7 @@
   </item>
   <item nodeId="node-0x028D9498">
     <command xml:space="preserve">walk w</command>
-    <result xml:space="preserve">Town Hall closet (in Spaceplane)&#x000A;You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.&#x000A;&#x000A;You can see Cleaning supplies and New Ship door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Town Hall closet&#x000A;You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.&#x000A;&#x000A;You can see Cleaning supplies and New Ship door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1077,7 +1077,7 @@
   </item>
   <item nodeId="node-0x028F5938">
     <command xml:space="preserve">walk e</command>
-    <result xml:space="preserve">Town Hall (in Spaceplane)&#x000A;You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west&#x000A;&#x000A;You can see Computer and Old book here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Town Hall&#x000A;You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west&#x000A;&#x000A;You can see Computer and Old book here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -1088,7 +1088,7 @@
   </item>
   <item nodeId="node-0x028F5388">
     <command xml:space="preserve">walk s</command>
-    <result xml:space="preserve">town square (in Spaceplane)&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words "Town Hall" displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">town square&#x000A;You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words "Town Hall" displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
