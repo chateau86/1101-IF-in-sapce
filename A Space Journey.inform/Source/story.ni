@@ -32,13 +32,14 @@ The Mid Deck is a room. "The interior of the rocketship is almost entirely white
 	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.".
 	[Computer is an object. computer is in mid deck. ][for testing]
-	gas tank is an object. gas tank is a container. gas tank is in mid deck.
-instead of opening gas tank in Spaceplane:
-	say "The gas spread around the plane, killing all bacteria.";
-	now spaceplane is fumigated.
+	gas tank is in mid deck.  gas tank is a container. gas tank is closed. gas tank is openable.
 
-instead of opening gas tank in Spaceplane:
-	say "I shouldn't waste the gas.";
+instead of opening gas tank:
+	if player is in spaceplane:
+		say "The gas spread around the plane, killing all bacteria.";
+		now spaceplane is fumigated;
+	else:
+		say "I shouldn't waste the gas.".
 
 
 The Lower Deck is a room. "There is a hatch on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
@@ -83,16 +84,19 @@ The parking lot is a room. “You look around you and see a surprising amount of
 instead of inserting New Ship Door into spacePlane:
 	now new ship door is nowhere;
 	now spaceplane is not doorbroken.
-	
-instead of entering spaceplane:
+
+before entering spaceplane:
 	if (spaceplane is doorBroken):
 		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to put it back together...";[TODO: Proper logic]
+		now the player is in parking lot;
 	else if (knowEverything is false):
 		say “The ship is ready for departure but your mind is not. You are not leaving this place without solving this mystery.";
 	else if (spaceplane is fumigated):
 		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
+		end the story;
 	else if unFumigatedTOConfirm is 2:
 		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
+		end the story;
 	else if unFumigatedTOConfirm is 1:
 		say "There are arguments for and against doing this. ";
 		increase unFumigatedTOConfirm by 1;
@@ -321,7 +325,7 @@ An every turn rule:
 			if (knowComputer is true):
 				if (beenInBedroom is true):
 					now knowEverything is true;
-					say "know all".
+					[say "know all".]
 
 instead of jumping:
 	[say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".]
