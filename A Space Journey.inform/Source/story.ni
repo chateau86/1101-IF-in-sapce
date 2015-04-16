@@ -30,9 +30,15 @@ say "[italic type]It is the year 2315, you are an astronaut who embarks on a jou
 
 The Mid Deck is a room. "The interior of the rocketship is almost entirely white. Your room is on the east side. On the west side of the room is a small cubicle that leads to the bathroom.  On the other side of the room is a ladder leads to the flight deck above and a lower deck below. A brochure of the rocket is pinned onto the wall.” East of the Mid Deck is Your Room. West of the Mid Deck is the Bathroom. Up from the Mid Deck is the Flight Deck. Down from the Mid Deck is the Lower Deck.
 	Brochure is an object. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
-All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing."
+All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.".
 	[Computer is an object. computer is in mid deck. ][for testing]
+	gas tank is an object. gas tank is a container. gas tank is in mid deck.
+instead of opening gas tank in Spaceplane:
+	say "The gas spread around the plane, killing all bacteria.";
+	now spaceplane is fumigated.
 
+instead of opening gas tank in Spaceplane:
+	say "I shouldn't waste the gas.";
 
 
 The Lower Deck is a room. "There is a hatch on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
@@ -309,7 +315,18 @@ An every turn rule:
 		if isRead entry > 0:
 			increase knowcount by 1;
 	if knowCount > 2:
-		now knowComputer is true.
+		now knowComputer is true;
+	if (knowOrangeDay is true):
+		if (knowDeathRate is true):
+			if (knowComputer is true):
+				if (beenInBedroom is true):
+					now knowEverything is true;
+					say "know all".
 
 instead of jumping:
-	say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".
+	[say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".]
+	now knowOrangeDay is true;
+	now knowDeathRate is true;
+	now knowComputer is true;
+	now beenInBedroom is true;
+	
