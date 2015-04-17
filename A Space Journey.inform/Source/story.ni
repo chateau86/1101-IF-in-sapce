@@ -30,14 +30,7 @@ The Mid Deck is a room. "The interior of the rocketship is almost entirely white
 	Brochure is an object. Brochure is undescribed. Brochure is in the mid deck. Brochure is fixed in place. description of brochure is "[quotation mark]The all-new Gulfstream G9800 space plane offer the best performance in the small suboptic transport class. With the top speed of 0.98C, the highest in class, and unbeatable fuel economy from our twin wormhole energizer, You are guaranteed to arrive at your space colony faster than anyone while still spending less on fuel.[quotation mark][line break]
 All that performance was paid for with reduced structure, something you just discovered the hard way on the crash landing.".
 	[Computer is an object. computer is in mid deck. ][for testing]
-	gas tank is in patient room.  gas tank is a container. gas tank is undescribed. gas tank is closed. gas tank is openable.
-
-instead of opening gas tank:
-	if player is in parking lot:
-		say "The gas spread around the plane, killing all bacteria.";
-		now spaceplane is fumigated;
-	else:
-		say "I shouldn't waste the gas.".
+	
 
 
 The Lower Deck is a room. "There is a ship door on the north side where you can leave the ship. The lower deck is large and filled with rooms you don't care about. There is a ladder where you climbed down from the mid deck." The Lower Deck is down from the Mid Deck.
@@ -80,16 +73,21 @@ The parking lot is a room. “You look around you and see a surprising amount of
 	Spaceplane is a vehicle. space plane is undescribed. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
 instead of inserting New Ship Door into spacePlane:
-	if the player is carrying the toolbox:
-		now new ship door is nowhere;
-		now spaceplane is not doorbroken;
+	if knowFixDoor is true:
+		if the player is carrying the toolbox:
+			now new ship door is nowhere;
+			now spaceplane is not doorbroken;
+			say "That was a quick fix.";
+		else:
+			say "I need a wrench.";
+			reject the player's command;
 	else:
-		say "I need a wrench.";
+		say "But I don't know how";
 		reject the player's command.
 
 before entering spaceplane:
 	if (spaceplane is doorBroken):
-		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to [italic type]install [roman type]it...";[TODO: Proper logic]
+		say "The door is partially disassembled. Even if you could get in, it’s not flyable like this. Maybe if you knew where the parts were and how to [italic type]install [roman type]it...";
 		move the player to parking lot;
 		reject the player's command;
 	else if (knowEverything is false):
@@ -97,11 +95,9 @@ before entering spaceplane:
 		move the player to parking lot;
 		reject the player's command;
 	else if (spaceplane is fumigated):
-		say “Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here.”;
-		end the story saying "Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to life as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
+		end the story saying "Ahh, the nice smell of tetrachloroethane in the morning. This plane should be clean by now. You switched the cabin air control back to auto. Better get the show on the road before anything bad happens on Earth. We have no time to waste here. Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to life as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
 	else if unFumigatedTOConfirm is 2:
-		say “You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. ”;
-		end the story saying "Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to lifelife as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
+		end the story saying "You made your mind. Eradicating modern civilization is not exactly a decision one would made lightly, but it might be exactly what the civilization needs to rebuild itself. The problem, after all, was caused by overpopulation. This modern black death, or ‘orange death’ (painful decision have its way of causing bad puns), could be the magic bullet needed for recovery and reconstruction. Your hand reached to the overhead panel. The auxiliary power unit whirled to life. The indicators and gauges lit up. It was not long before the navigation computers are programmed and the wormhole generators spooled up to life. The plane clicks and clatter to lifelife as she takes off. You crossed your fingers as the autopilot took over. It’s going to be a long trip... ";
 	else if unFumigatedTOConfirm is 1:
 		say "'There are arguments for and against doing this.' [line break]You left the spaceplane to clear your mind.";
 		increase unFumigatedTOConfirm by 1;
@@ -114,9 +110,9 @@ before entering spaceplane:
 		move the player to parking lot;
 		reject the player's command.
 
-The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. (possibility for more places to be added) You cannot see any other colonists in the immediate area. You remember being told to go see a doctor of some sort so he can make sure you are still healthy after your long journey."
+The town square is a room. town square is north of parking lot. “You walk from your rocket to the center of the tiny scattering of buildings. To the west you can see a large white building with a large red cross near the roof. To the east there are small houses that seem to make up the residential area. To the North you see a regal looking building with the words [quotation mark]Town Hall[quotation mark] displayed over the doors. You cannot see any other colonists in the immediate area. You remember being told to go see a doctor of some sort so he can make sure you are still healthy after your long journey."
 
-The Town Hall is a room. Town hall is north of Town square. [Description of Town Hall is "You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west.”.]
+The Town Hall is a room. Town hall is north of Town square.
 
 After looking when player is in Town Hall: 
 	if player is not wearing goggles, say "You enter the regal building and see a wide room. There is a desk with a computer and an old book over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west.”;
@@ -126,6 +122,10 @@ Portrait is an object. Portrait is fixed in place. Portrait is in town hall. des
 Town Hall closet is a room. town hall closet is west of town hall. Description of town hall closet is “You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.”
 
 Cleaning supplies are an object. Cleaning supplies are undescribed. Cleaning supplies are fixed in place. Cleaning supplies are in town hall closet. Description of cleaning supplies is "Various cleaning products that are good at cleaning up space dirt."
+
+instead of taking cleaning supplies:
+	say "Who do you think you are? A space janitor?";
+	reject the player's command.
 
 Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".
 
@@ -138,7 +138,7 @@ ls - list directories and files in the current folder.[line break]
 cat <filename> - read the target file. Ex. 'cat blog.txt' shows the content of the file blog.txt. [line break]
 Now we are ready for some real works. [line break]
 [line break]
-[roman type]And that's where the rest of the pages were torn off. 'Getting chicks with Linux', huh? I almost grew a neckbeard just by reading that.".
+[roman type]And that's where the rest of the pages were torn off. [italic type]'Getting chicks with Linux'[roman type], huh? I almost grew a neckbeard just by reading that.".
 
 [-----RESIDENTAL-----]
 The Residential area is east of Town square. Description of Residential area is “You walk towards the residential area hoping that you’ll finally find someone else. Its kind of creepy that no one has come to greet you yet. As you approach the residential area you see a line of houses that are all the same except for the color. The houses closest to you are green to the southeast, blue to the northeast, and red to the east. To the west is the town square.”
@@ -151,9 +151,13 @@ Green house is a room. Green house is southeast of Residential area. Description
 
 
 The Johnson's Hall is a room. Johnson's hall is northeast of Residential area. [describe as blue house] The description of Johnson's Hall is  “Hey! This is the same house as the one you saw on the doctors desk! Maybe he will be able to explain why you haven’t seen a single person yet.
-You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, [quotation mark] H-hello?[quotation mark] but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms, one to the southeast and the other to the east, a study to the west, and the exit is to the southwest.”
-[TODO: No player allowed through door]
-Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedroom door is southeast of Johnson's Hall. Description of Bedroom door is “The door that lead into the bedroom is slightly ajar and allows you to see an empty pink room that probably belongs to the girl you saw in the picture on the doctor’s desk."
+You try to open the door and find it unlocked. You cautiously enter the building and call out a hesitant, [quotation mark] H-hello?[quotation mark] but you get no reply. The house is a single story with four different rooms. There is a kitchen/eating area to the north, two bedrooms, one to the southeast and the other to the east, a study to the west, and the exit is to the southwest.”.
+
+instead of opening bedroom door:
+	say “The door that lead into the bedroom is slightly ajar and allows you to see an empty pink room that probably belongs to the girl you saw in the picture on the doctor’s desk.[line break]I don't think I should get in there, though.";
+	reject the player's command.
+
+Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedroom door is southeast of Johnson's Hall. 
 
 The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”
 
@@ -164,7 +168,11 @@ The Johnson's Kitchen is a room. it is north of Johnson's hall. Description of J
 Cupboard is in kitchen. Cupboard is a container. Cupboard is undescribed. Cupboard is fixed in place. Description of cupboard is “You look under the sink into the cupboard and see a battered looking toolbox and some cleaning products.”
 
 Toolbox is an object. Toolbox is undescribed. Toolbox is in the Cupboard. Description of Toolbox is  “You take the toolbox and examine its contents. There are various tools that look like they would be useful if you had to fix something.”
-Cleaning products is an object. cleaning products is in cupboard. cleaning products is fixed in place. Description of cleaning products is “‘Kills 99% of germs!’ Only Earth’s germs, as it turns out. So much for truth in advertising.”
+Cleaning products is an object. cleaning products is in cupboard. cleaning products is fixed in place. cleaning products is undescribed. Description of cleaning products is “‘Kills 99% of germs!’ Only Earth’s germs, as it turns out. So much for truth in advertising.”.
+
+instead of taking cleaning products:
+	say "It only kills Earth's germs. Not very useful here.";
+	reject the player's command.
 
 The Johnson's Parent's Bedroom is a room. it is east of Johnson's hall. Description of Johnson's Parent's Bedroom is “You open the bedroom door and immediately regret your decision. On the bed in the middle of the room is who you assume to be the doctor and his family huddled together. They are all very clearly dead and have been for a while judging by the smell that just hit your nose. You back out of the room and slam the door shut. You wonder what the heck has happened to all of the people on Xuria.”.
 instead of going east from Johnson's hall:
@@ -178,30 +186,39 @@ instead of going east from Johnson's hall:
 
 The Hospital lobby is a room.  Hospital lobby is west of town square. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. You see a set of stairs leading up to a second floor to one side of the room. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”.
 
-The Patient room is a room. it is north of hospital lobby. Description of Patient room is “You enter one of the patient rooms and see that it is full of various medical equipment. Off to one side you can see a gas tank that is labeled Tetrachloroethane."
+The Patient room is a room. it is north of hospital lobby. Description of Patient room is “You enter one of the patient rooms and see that it is full of various medical equipment. Off to one side you can see a gas tank that is labeled Tetrachloroethane.".
+	gas tank is in patient room.  gas tank is a container. gas tank is undescribed. gas tank is closed. gas tank is openable.
+	
+instead of opening gas tank:
+	if player is in parking lot:
+		say "The gas spread around the plane, killing all bacteria.";
+		now spaceplane is fumigated;
+	else:
+		say "I shouldn't waste the gas.".
 
 The Hospital hallway is up of Hospital lobby. Description of Hospital hallway is “You walk up stairs to see a hallway of what are seemingly offices. At the end of the hall to the north there is a door that is slightly ajar.” 
 
 Reception counter is an object. Reception counter is fixed in place. Reception counter is in hospital lobby. Description of reception counter is "The reception desk has many different files on it that look too important to touch. You cannot see the receptionist, or anyone else for that matter, in the immediate area.”
-Bulletin Board is an object. Bulletin board is undescribed. Bulletin board is fixed in place. Bulletin board is in Hospital Lobby. Description of bulletin board is "You take a closer look and see flyers and papers for a multitude of things. There are some displaying deals for space plant control and other services as well as a brightly colored flyer encouraging people to participate in Wear Orange to Work Day on X/XX” [TODO make this a part of knowing about orange day]
+Bulletin Board is an object. Bulletin board is undescribed. Bulletin board is fixed in place. Bulletin board is in Hospital Lobby. Description of bulletin board is "You take a closer look and see flyers and papers for a multitude of things. There are some displaying deals for space plant control and other services as well as a brightly colored flyer encouraging people to participate in Wear Orange to Work Day on 4/20” 
 
 After examining the bulletin board:
 	now knowOrangeDay is true.
 
-The Doctor's office is north of Hospital hallway. [Description of Doctor's office is "You approach the slightly open door and see a nameplate that reads Dr. Johnson next to it. You enter the office and your attention is immediately drawn to the wooden desk taking up most of the room. There are papers strewn all over it as well as a photo of a tall man and a woman and a child standing in front of a blue house that looks as though it is located on this planet. The only other furniture in the room is a bookcase filled with medical journals and other books with names you cannot pronounce.” ]
+The Doctor's office is north of Hospital hallway.
+
 After looking when player is in Doctor's office:
 	if player is not wearing goggles, say "You approach the slightly open door and see a nameplate that reads Dr. Johnson next to it. You enter the office and your attention is immediately drawn to the wooden desk taking up most of the room. There are papers strewn all over it as well as a photo of a tall man and a woman and a child standing in front of a blue house that looks as though it is located on this planet. The only other furniture in the room is a bookcase filled with medical journals and other books with names you cannot pronounce.”;
 	if player is wearing goggles, say "When the gogles on, you see a bunch of static at first but it eventually clears up long enough to show a first person view of someone looking at papers on the desk you are standing next to. You can hear some distorted sounds that you think are an occasional sigh or mumble of frustration. You focus on the papers the person is examining and see that they are patient files like the ones you were looking at earlier. You get a glimpse of how all life on the planet seems to hate bright colors. Suddenly the screen goes black.".
 	
 	Desk is in doctor's office. Desk is object. Desk is fixed in place.
-	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on X/XX?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.”
+	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on 4/20?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.”
 	
 After examining the desk:
 	now knowDeathRate is true.
 	
 	An openable container called the Desk-Drawer is in doctor's office. The desk-drawer is locked. The desk-drawer is fixed in place. Description of desk-drawer is "You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”.
 	
-	Carry out opening desk-drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that I once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
+	Carry out opening desk-drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that you once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
 	
 	Goggles is an object. [Goggles is undescribed.] Goggles is in the desk-drawer.  Goggles is wearable. Description of goggles is "You should try looking at your surroundings in a different perspective."
  
@@ -263,7 +280,6 @@ After reading a command when the command prompt matches the regular expression "
 	let strParam be player's command;
 	replace word number 1 in strParam with "";
 	replace character number 1 in strParam with "";
-	[say "CMD: [strCmd] Param: [strParam][line break]";]
 	if (strCmd matches the text "emacs"):
 		say "vi master race.";
 	else if (strCmd matches the text "vi"):
@@ -325,18 +341,19 @@ Table of fileContent
 url	isRead (a number)	fileContent
 "/home/john12/Download/B979Manual/FCOM.txt"	0	"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
 "/home/john12/Download/B979Manual/MxManual.txt"	0	"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."			
-"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date X/XX, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. [italic type]TODO: Add tetrachloroethane test result[roman type] ..."	
-[TODO make it so you have to read the manual and stuff to fix the plane]
+"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date 4/20, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. [italic type]TODO: Add tetrachloroethane test result after I finish the bacteria growth analysis.[roman type] ..."	
 
 Chapter - 3 - Player status
 
 knowOrangeDay is a truth state that varies. [knowOrangeDay is false.]
 knowDeathRate is a truth state that varies. [KnowDeathRate is false.]
 knowComputer is a truth state that varies. [KnowComputer is false.]
+knowFixDoor is a truth state that varies. 
 beenInBedroom is a truth state that varies.
 unFumigatedTOConfirm is a number that varies.
 unFumigatedTOConfirm is 0.
 knowEverything is a truth state that varies.
+copyrightViolation is a truth state that varies.
 
 An every turn rule:
 	[say "CheckKnowledge RAN";]
@@ -344,7 +361,11 @@ An every turn rule:
 	repeat with N running from 1 to the number of rows in the table of fileContent:
 		choose row N in the table of fileContent; 
 		if isRead entry > 0:
+			[say "[N] iz read";]
 			increase knowcount by 1;
+			if url entry is "/home/john12/Download/B979Manual/MxManual.txt":
+				now knowFixDoor is true;
+				[say "fix ma door";]
 	if knowCount > 2:
 		now knowComputer is true;
 	if (knowOrangeDay is true):
@@ -354,9 +375,9 @@ An every turn rule:
 				[say "know all".]
 
 instead of jumping:
-	[say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".]
-	now knowOrangeDay is true;
-	now knowDeathRate is true;
-	now knowComputer is true;
-	now beenInBedroom is true;
+	if (copyrightViolation is false) :
+		say "[italic type]Might as well jump. Jump! Go ahead, jump!  Go ahead aaand jump. [line break][roman type]1980's music goes together so well with space exploration.";
+		now copyrightViolation is true;
+	else:
+		end the story saying "In response to a complain recieved under the United States DMCA, we have to remove the rest of this game due to the recent copyright violation of the song [italic type]Jump [roman type]by [italic type]Van Halen. [roman type]We apologize that we have to cut short your experience with this game. [line break][line break][line break]Or so our lawyers said. Whatever, we (the [italic type]REAL [roman type]developer team) don't care. Just type undo (and don't tell our legal team about our advice: If they ask, play dumb!).".
 	
