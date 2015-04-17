@@ -80,8 +80,12 @@ The parking lot is a room. “You look around you and see a surprising amount of
 	Spaceplane is a vehicle. space plane is undescribed. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
 instead of inserting New Ship Door into spacePlane:
-	now new ship door is nowhere;
-	now spaceplane is not doorbroken.
+	if the player is carrying the toolbox:
+		now new ship door is nowhere;
+		now spaceplane is not doorbroken;
+	else:
+		say "I need a wrench.";
+		reject the player's command.
 
 before entering spaceplane:
 	if (spaceplane is doorBroken):
