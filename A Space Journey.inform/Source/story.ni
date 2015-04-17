@@ -1,4 +1,3 @@
-The story genre is "Science Fiction". The story headline is "A Space Journey". The story creation year is 2015. 
 
 Chapter 0 - Meta declaration
 

@@ -9,7 +9,7 @@ project folder "D:\DOCS\Dropbox\Schoolwork\Git\ENGL1102SpaceIF\1101-IF-in-space\
 
 ! Blorb instructions
 
-storyfile leafname "story.gblorb"
+storyfile leafname "Xuria.gblorb"
 storyfile "D:\DOCS\Dropbox\Schoolwork\Git\ENGL1102SpaceIF\1101-IF-in-space\A Space Journey.inform\Build\output.ulx" include
 ifiction "D:\DOCS\Dropbox\Schoolwork\Git\ENGL1102SpaceIF\1101-IF-in-space\A Space Journey.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -20,8 +20,8 @@ picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 placeholder [IFID] = "D16A39BA-D205-487C-BCAC-AEE75CE45C18"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
-placeholder [TITLE] = "Untitled"
-placeholder [AUTHOR] = "Anonymous"
+placeholder [TITLE] = "Xuria"
+placeholder [AUTHOR] = "Allen Chan, Kelsey Tweed, Tarun Nadimpalli, Woradorn Kamolpornwijit"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
