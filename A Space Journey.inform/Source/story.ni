@@ -1,6 +1,4 @@
-The story genre is "Science Fiction". The story headline is "Fuck this, I'm out". The story creation year is 2015. 
-[Note to self: Do *not* start a programming project with more than half of the group being horribly computer illiterate. This is what it feels like to have more 'middle-management' type than programmer in a project. 'No programing skill required' my ass!]
-
+The story genre is "Science Fiction". The story headline is "A Space Journey". The story creation year is 2015. 
 
 Chapter 0 - Meta declaration
 
@@ -116,6 +114,10 @@ The town square is a room. town square is north of parking lot. “You walk from
 
 The Town Hall is a room. Town hall is north of Town square. Description of Town Hall is "You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west”
 
+After looking when player is in Town Hall: 
+	if player is not wearing goggles, say "You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west.”;
+	if player is wearing goggles, say "The goggles immediately begin playing a blurry video. You see the leader of the colony with a concerned look on his face. Through the static you can hear the same voice you heard in the doctors office speaking with a frantic sound to his speech. You can only pick out a few words such as 'disease, too many deaths, and can’t find cure.' The expression on the leader’s face becomes more and more solemn until the goggles again go black.”.
+
 Portrait is an object. Portrait is fixed in place. Portrait is in town hall. description of portrait is "A white haired, solemn looking man stares out at you from the canvas he has been painted on. Creepy." 
 Town Hall closet is a room. town hall closet is west of town hall. Description of town hall closet is “You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.”
 
@@ -123,7 +125,7 @@ Cleaning supplies are an object. Cleaning supplies are undescribed. Cleaning sup
 
 Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: User and password]
 
-New Ship door is an object. New ship door is undescribed. Computer is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
+New Ship door is an object. New ship door is undescribed. [Computer is in town hall closet.] description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
 Old book is an object. Old book is undescribed. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
 These are commands to show your prospective m'lady[line break]
 WARNING: The system is CaSe-sEnsITivE! [line break]
@@ -177,11 +179,12 @@ The Patient room is a room. it is north of hospital lobby. Description of Patien
 The Hospital hallway is up of Hospital lobby. Description of Hospital hallway is “You walk up stairs to see a hallway of what are seemingly offices. At the end of the hall to the north there is a door that is slightly ajar.” 
 
 Reception counter is an object. Reception counter is fixed in place. Reception counter is in hospital lobby. Description of reception counter is "The reception desk has many different files on it that look too important to touch. You cannot see the receptionist, or anyone else for that matter, in the immediate area.”
-
-
 Bulletin Board is an object. Bulletin board is undescribed. Bulletin board is fixed in place. Bulletin board is in Hospital Lobby. Description of bulletin board is "You take a closer look and see flyers and papers for a multitude of things. There are some displaying deals for space plant control and other services as well as a brightly colored flyer encouraging people to participate in Wear Orange to Work Day.”
 
 The Doctor's office is north of Hospital hallway. Description of Doctor's office is "You approach the slightly open door and see a nameplate that reads Dr. Johnson next to it. You enter the office and your attention is immediately drawn to the wooden desk taking up most of the room. There are papers strewn all over it as well as a photo of a tall man and a woman and a child standing in front of a blue house that looks as though it is located on this planet. The only other furniture in the room is a bookcase filled with medical journals and other books with names you cannot pronounce.” 
+After looking when player is in Doctor's office:
+	if player is not wearing goggles, say "You approach the slightly open door and see a nameplate that reads Dr. Johnson next to it. You enter the office and your attention is immediately drawn to the wooden desk taking up most of the room. There are papers strewn all over it as well as a photo of a tall man and a woman and a child standing in front of a blue house that looks as though it is located on this planet. The only other furniture in the room is a bookcase filled with medical journals and other books with names you cannot pronounce.”;
+	if player is wearing goggles, say "When the gogles on, you see a bunch of static at first but it eventually clears up long enough to show a first person view of someone looking at papers on the desk you are standing next to. You can hear some distorted sounds that you think are an occasional sigh or mumble of frustration. You focus on the papers the person is examining and see that they are patient files like the ones you were looking at earlier. Suddenly the screen goes black.".
 	
 	Desk is in doctor's office. Desk is object. Desk is fixed in place.
 	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on X/XX?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.” 
