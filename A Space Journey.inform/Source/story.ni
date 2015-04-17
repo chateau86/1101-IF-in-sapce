@@ -50,27 +50,27 @@ The Flight Deck is a room. The Flight Deck is up from the Mid Deck.
 
 The Your Room is a room. "The majority of space in the room is taken up by the chest that you kept all your belongings in. Next to your makeshift 'bed' is a small nightstand." Your Room is east of the Mid Deck.
 	Chest is in your room. Chest is undescribed. Chest is an object. Chest is fixed in place. Chest is closed. Chest is openable. 
-	Carry out opening chest: say "Inside the chest you see a neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey."
+	Carry out opening chest: say "Inside the chest you see a neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey.".
 
-		Uniform is an object. Uniform is in the chest. Uniform is wearable. Uniform is undescribed.
+		Uniform is an object. Uniform is in the chest. Uniform is wearable. [Uniform is undescribed.]
 		description of uniform is "A neatly folded blue uniform that every new member to the colony wears amongst all of the other clothes you have been wearing on your journey.".
 		Carry out wearing:
-			say "You pull on the comfortable outfit and get ready to leave your rocket for good."
+			say "You pull on the comfortable outfit and get ready to leave your rocket for good.".
 			
 	Nightstand is in your room. Nightstand is undescribed. Nightstand is object. Nightstand is fixed in place.
-	Description of nightstand is “The nightstand is a small table with a single drawer. It has a small lamp which is providing light for the tiny room.”
+	Description of nightstand is “The nightstand is a small table with a single drawer. It has a small lamp which is providing light for the tiny room.”.
 	
 		The nightstand support a lamp. the lamp is fixed in place. the lamp is undescribed. 
-		Description of lamp is "$1million in R&D gave us this $5.99 IKEA lamp. Everything is more expensive in Aerospace, they said."
+		Description of lamp is "$1million in R&D gave us this $5.99 IKEA lamp. Everything is more expensive in Aerospace, they said.".
 	
-		The nightstand support a drawer. the drawer is undescribed. the drawer is closed. the drawer is openable. drawer is fixed in place.
-		Carry out opening drawer: say “You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.”
+		The nightstand support a drawer. the drawer is a container. the drawer is undescribed. the drawer is closed. the drawer is openable. drawer is fixed in place.
+		Carry out opening drawer: say “You open the drawer and see wrappers from the candy bars you smuggled onto the ship before you departed and inevitably ate within the first month, despite telling yourself you would save at least one for when you reached your destination. Under the wrappers you can see something made of plastic.”.
 	
-		candy wrapper is in drawer. candy wrapper is undescribed.
+		candy wrapper is in drawer. [candy wrapper is undescribed.]
 instead of unlocking ship door with candy wrapper:
 	say "That's not how any of this works!".
 		
-		ID card is in the drawer. id card is undescribed. id card underlie the candy wrapper. it unlocks the ship door.
+		ID card is in the drawer. [id card is undescribed.] id card underlie the candy wrapper. it unlocks the ship door.
 
 The Bathroom is a room. The Bathroom is west of the Mid Deck.
 instead of going west from mid deck:
@@ -116,7 +116,7 @@ The Town Hall is a room. Town hall is north of Town square. Description of Town 
 
 After looking when player is in Town Hall: 
 	if player is not wearing goggles, say "You enter the regal building and see a wide room. There is a desk with a computer over in one corner. Behind the desk there is a portrait of a white haired man you remember seeing on the brochure for the colony. He is the leader of the colony if you remember correctly. There is a closet to the west.”;
-	if player is wearing goggles, say "The goggles immediately begin playing a blurry video. You see the leader of the colony with a concerned look on his face. Through the static you can hear the same voice you heard in the doctors office speaking with a frantic sound to his speech. You can only pick out a few words such as 'disease, too many deaths, and can’t find cure.' The expression on the leader’s face becomes more and more solemn until the goggles again go black.”.
+	if player is wearing goggles, say "The goggles immediately begin playing a blurry video. You see the leader of the colony with a concerned look on his face. Through the static you can hear the same voice you heard in the doctors office speaking with a frantic sound to his speech. You can only pick out a few words such as 'disease, too many deaths, and can’t find cure.'. He turns on the computer and logged in. You saw the user name was 'john12'. He typed 'CoHoBaSt' in as a password. He quickly opened his blog post. The expression on the leader’s face becomes more and more solemn until the goggles again go black.”.
 
 Portrait is an object. Portrait is fixed in place. Portrait is in town hall. description of portrait is "A white haired, solemn looking man stares out at you from the canvas he has been painted on. Creepy." 
 Town Hall closet is a room. town hall closet is west of town hall. Description of town hall closet is “You open the door to find yourself in a small dimly lit closet. In the corner you can see a large door of some sort leaning against the wall. The only other things in the closet are cleaning supplies.”
@@ -125,7 +125,7 @@ Cleaning supplies are an object. Cleaning supplies are undescribed. Cleaning sup
 
 Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: User and password]
 
-New Ship door is an object. New ship door is undescribed. [Computer is in town hall closet.] description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
+New Ship door is an object. New ship door is undescribed. New ship door is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
 Old book is an object. Old book is undescribed. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
 These are commands to show your prospective m'lady[line break]
 WARNING: The system is CaSe-sEnsITivE! [line break]
@@ -172,8 +172,11 @@ instead of going east from Johnson's hall:
 
 [-----HOSPITAL-----]
 
-The Hospital lobby is a room.  Hospital lobby is west of town square. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. You see a set of stairs leading up to a second floor to one side of the room. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”
+The Hospital lobby is a room.  Hospital lobby is west of town square. Description of Hospital lobby is “You enter the white building and discover that it is a hospital. There is a reception counter in the middle. You see a set of stairs leading up to a second floor to one side of the room. On a wall there is a bulletin board covered with papers. You can see some patient rooms to the North”.
 
+After examining the bulletin board:
+	now knowOrangeDay is true.
+	
 The Patient room is a room. it is north of hospital lobby. Description of Patient room is “You enter one of the patient rooms and see that it is full of various metal cylinders. You look at them more closely and see that they are labeled Carbon Dioxide, Tetrachloroethane, and and Hexachlorocyclohexane."
 
 The Hospital hallway is up of Hospital lobby. Description of Hospital hallway is “You walk up stairs to see a hallway of what are seemingly offices. At the end of the hall to the north there is a door that is slightly ajar.” 
@@ -187,12 +190,16 @@ After looking when player is in Doctor's office:
 	if player is wearing goggles, say "When the gogles on, you see a bunch of static at first but it eventually clears up long enough to show a first person view of someone looking at papers on the desk you are standing next to. You can hear some distorted sounds that you think are an occasional sigh or mumble of frustration. You focus on the papers the person is examining and see that they are patient files like the ones you were looking at earlier. Suddenly the screen goes black.".
 	
 	Desk is in doctor's office. Desk is object. Desk is fixed in place.
-	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on X/XX?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.” 
-	An openable container called the Desk-Drawer is in doctor's office. The desk-drawer is locked. The desk-drawer is fixed in place. Description of desk-drawer is "You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”
+	Description of Desk is “ You rifle through the papers on the desk and see that they are mostly patient files. Further inspection reveals that many of the patients are seemingly suffering from the same disease. There are questions scrawled in barely legible handwriting on many of these files asking questions such as, 'Who has infected, who this time?' and 'Why weren’t there as many deaths on X/XX?' Your closer inspection of the area has brought to your attention a desk-drawer on the other side of the desk.” .
+	
+After examining the desk:
+	now knowDeathRate is true.
+	
+	An openable container called the Desk-Drawer is in doctor's office. The desk-drawer is locked. The desk-drawer is fixed in place. Description of desk-drawer is "You try to open the drawer but it is locked. You wonder where the doctor could have left the key.”.
 	
 	Carry out opening desk-drawer: say "You take the key you got from the doctor’s study and unlock the drawer. In the drawer you see a strange looking contraption that resemble goggles or an ancient machine called an Oculus rift that I once heard about in my history of technology class. This particular example seems to be in a poor condition: The plastic looks faded and the battery oozes strange chemical."
 	
-	Goggles is an object. Goggles is undescribed. Goggles is in the desk-drawer.  Goggles is wearable.
+	Goggles is an object. [Goggles is undescribed.] Goggles is in the desk-drawer.  Goggles is wearable.
  
 Chapter 2 - Meta - Computer
 
@@ -314,7 +321,7 @@ Table of fileContent
 url	isRead (a number)	fileContent
 "/home/john12/Download/B979Manual/FCOM.txt"	0	"A very long text that sounds more and more familar as it brings back your memories from your freight dog days..."
 "/home/john12/Download/B979Manual/MxManual.txt"	0	"Door should be installed with the up arrow pointing up and the inside label facing inside. Use No. 12 spanner to tighten the hinge bolt. Put grease (P/N:1102) onto the hinge. Do not use mayonaise for this task. Horseradish is not allowed, either."			
-"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date XX/XX, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. ..."	
+"/home/john12/Documents/BlogDraft.txt"	0	"... Just look at the death rate here. On the date X/XX, the number of death was suddenly zero. ... This may offer an important clue toward the cure for this bacteria. We may need to look into what happened on that day. [italic type]TODO: Add tetrachloromethane test result[roman type] ..."	
 
 Chapter - 3 - Player status
 
@@ -338,9 +345,8 @@ An every turn rule:
 	if (knowOrangeDay is true):
 		if (knowDeathRate is true):
 			if (knowComputer is true):
-				if (beenInBedroom is true):
-					now knowEverything is true;
-					[say "know all".]
+				now knowEverything is true;
+				[say "know all".]
 
 instead of jumping:
 	[say "OrangeDay:[knowOrangeDay], DeathRate:[knowDeathRate], Computer:[knowComputer], bedroom:[beenInBedroom]".]
