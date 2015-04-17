@@ -123,7 +123,7 @@ Town Hall closet is a room. town hall closet is west of town hall. Description o
 
 Cleaning supplies are an object. Cleaning supplies are undescribed. Cleaning supplies are fixed in place. Cleaning supplies are in town hall closet. Description of cleaning supplies is "Various cleaning products that are good at cleaning up space dirt."
 
-Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".[TODO: User and password]
+Computer is an object. Computer is in town hall. Computer is fixed in place. Description of computer is "It's a UNIX system! I know this!".
 
 New Ship door is an object. New ship door is undescribed. New ship door is in town hall closet. description of New ship door is "This should fit the ship in the parking lot. If only I know how to [italic type]install[roman type] it onto the plane".
 Old book is an object. Old book is undescribed. old book is in town hall. description of old book is "[italic type]How to get chicks with Linux Part 38: Basic command line-fu [line break]
