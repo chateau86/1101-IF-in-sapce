@@ -70,7 +70,7 @@ instead of going west from mid deck:
 	say "You’ve already done everything you have to in here today.”.
 	
 The parking lot is a room. “You look around you and see a surprising amount of vegetation. Its amazing how similar Xuria’s atmosphere is to Earth’s. You are in a parking lot for space ships. The lot is empty except for an old spaceplane. The crash site is where the radio antenna array was. A shame that its now burnt to a crisp after the crash. To the North you can see some buildings that almost certainly make up the colony.”
-	Spaceplane is a vehicle. space plane is undescribed. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. you used to pilot that thing for a sketchy galactic freight operator years before I took a job with the government. You just can’t kill that that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
+	Spaceplane is a vehicle. space plane is undescribed. spaceplane is in parking lot. description of spaceplane is “It is a Boeing type 929-200, a triple-warp-drive ancient relic from decades past. You used to pilot that thing for a sketchy galactic freight operator years before you took a job with the government. You just can’t kill that thing, not even with years of neglect. They just don’t build ‘em like they used to. This one seems to be in a relatively good condition, compared to the ones on your last job, at least.”.
 	Spaceplane can be doorBroken. Spaceplane can be Fumigated. spaceplane is doorBroken. spaceplane is not fumigated.
 instead of inserting New Ship Door into spacePlane:
 	if knowFixDoor is true:
@@ -159,7 +159,8 @@ instead of opening bedroom door:
 
 Bedroom door is a door.  Bedroom door is closed. Bedroom door is unlocked. Bedroom door is southeast of Johnson's Hall. 
 
-The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”
+The Johnson's Office is a room. it is west of Johnson's hall. Description of Johnson's Office is “You enter a room with a large desk that is much neater than the one in the doctor’s office. On the desk you can see more pictures as well as a key attached to a lanyard.”.
+pictures is an object. pictures is fixed in place. pictures is in Johnson's office. Description of pictures is "An assortment of cliche family photos and holiday cards."
 
 Office key is an object. Office key is undescribed. Office key unlocks desk-drawer. Office key is in johnson's office. 
 
